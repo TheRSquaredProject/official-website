@@ -1,0 +1,119 @@
+.form-container > .wrapper{
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.choose-form-container{
+	display: flex;
+	justify-content: center;
+	/border: 1px solid black;
+	height: 6vw;
+	position: relative;
+}
+.form-content{
+	border: 1px solid red;
+	align-self: center;
+	/height: 50vh;
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	overflow-x: hidden;
+	width: auto;
+	border: 1px solid black;
+	width: 100%;
+}
+.form-option{
+	font-family: roboto;
+	font-size: 1.3vw;
+	font-weight: 600;
+	padding-left: .7em;
+	padding-right: .7em;
+	position: relative;
+}
+.actual-form-content-wrapper{
+	position: relative;
+}
+.actual-form-content{
+	height: 20em;
+	position: relative;
+	display: flex;
+	overflow-x: hidden;
+}
+.contact-us-form{
+	width: 100%;
+	position: relative;
+	transition: .5s ease-in-out;
+	/left: -50%;
+	/transform: translateY(-50%);
+}
+.be-a-volunteer-form{
+	width: 100%;
+	/opacity: 0;
+	left: 100%;
+	position: absolute;
+	/background-color: rgba(0,0,0,.5);
+	transition: .5s ease-out;
+}
+.go-left{
+	transform: translateX(-100%);
+}
+.be-a-volunteer-fade-in{
+	left: 0%;
+}
+.form-arrow{
+	position: absolute;
+	transform: rotate(180deg);
+	width: 1.2vw;
+	height: auto;
+	top: 38%;
+	transition: .3s;
+	cursor: pointer;
+}
+.arrow-left{
+	left: 35%;
+}
+.arrow-right{
+	left: 58%;
+}
+
+
+.form-group > label{
+	font-family: roboto;
+	font-size: 1.2vw;
+	color: white;
+}
+.form-group > .form-input{
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid black;
+}
+.form-input:focus,.form-input:active:focus,.form-input.active:focus,
+.form-input.focus,.form-input:active.focus,.form-input.active.focus {
+    outline: none;
+	box-shadow: none;
+}
+.form-input::placeholder{
+	color: white;
+}
+.form-input:placeholder-shown{
+	font-size: 1vw;
+	font-family: Roboto;
+	padding-left: .4em;
+}
+div[autoresize] {
+	font-family: roboto;
+  	height: auto;
+	padding: .5vw;
+}
+.form-submit-button{
+	background: rgba(21,21,21,.1);
+	border: 0px;
+	transition: background .2s;
+	font-size: 1.1vw;
+}
+.form-submit-button:hover{
+	border: .5px solid rgba(21,21,21,.3);
+	background: rgba(21,21,21,.2);
+}

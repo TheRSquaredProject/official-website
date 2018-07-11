@@ -1,0 +1,11 @@
+Issues:
+1. navbar should get a position fixed at the top of the screen when user passes the first landing view. when trying to implement this tried both window.onscroll = function $(window).on('scroll', function). but onscroll never fires. the only solution i can now think of is keep checking the value of document.scrollTop like a closed loop program but that looks like a bad practice.
+2. form textarea should automatically resize when user is typing to fit the overflowed text. 
+3. background colors, colors and fonts doesn't really look that good. suggestions?
+
+
+FAQs:
+1. form content layout
+2. about us page layout. any suggestions on implememting the timeline? 
+3. should 'meet the team' be a whole page long list of faces with title or should we divide the members into groups and let user select a group to see the memebers of that group?
+4. when are we going to get the images for landing page? 
