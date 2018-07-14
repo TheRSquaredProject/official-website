@@ -122,15 +122,6 @@ a, a:hover{
       margin-left: auto;
       margin-right: auto;
 }
-@media (max-width: 400px){
-	.land-cover-img{
-		padding: 0;
-		/position: absolute;
-		z-index: -1;
-		/width: 200%;
-		/left: 15%;
-	}
-}
 
 
 .land-content{
@@ -141,10 +132,13 @@ a, a:hover{
 	position: absolute;
 	top: 37%;
 }
-.headline{
+.land-content .headline{
 	font-family: 'Patua One', cursive;
 	padding: 1.2vw;
 	font-size: 3.1vw;
+}
+.land-content .headline::after{
+    display: none;
 }
 .details{
 	padding-bottom: 2vw;
@@ -173,15 +167,10 @@ a, a:hover{
 
 
 .about-us-container{
-	/display: none;
-    /border: 1em solid black;
     margin-top: 2em;
 	display: flex;
 	height: 100vh;
 	background: #FEFEFE;
-	/background: #61E786;
-	/justify-content: center;
-	//color: rgba(200,200,200,1);
 	color: #212121;
 	position: relative;
 	display: flex;
@@ -189,19 +178,15 @@ a, a:hover{
     overflow-y: hidden;
 }
 .about-us-content{
-	/border: 1px solid red;
 	position: relative;
 	align-self: flex-start;
 	display: flex;
 	flex-direction: row;
-    font-size: 1em;
-	/height: auto;
 	align-self: center;
 }
 .text-container{
 	position: relative;
 	padding: 1vw;
-	/border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	min-width: 70%;
@@ -211,6 +196,7 @@ a, a:hover{
 	left: 1em;
 	position: relative;
 	display: flex;
+    justify-content: flex-start;
 }
 .text-container > .headline-container::before{
 	content: '';
@@ -223,10 +209,13 @@ a, a:hover{
 .text-container .headline{
 	position: relative;
 	padding-left: 2vw;
-	font-size: 4vw;
+	font-size: 3em;
+}
+.text-container .headline::after{
+    display: none;
 }
 .text-container-content{
-	font-size: 1.4vw;
+	font-size: 1.2em;
 	padding: 1vw;
 }
 .image-container{
@@ -253,13 +242,14 @@ a, a:hover{
 	display: flex;
 	flex-direction: column;
 }
-.what-we-do-headline-container{
+.headline-container{
 	position: relative;
     min-width: 100%;
     display: flex;
     justify-content: center;
 }
-.what-we-do-headline{
+.headline{
+    font-family: 'Patua One', cursive;
     align-self: center;
 	color: #212121;
 	position: relative;
@@ -268,7 +258,7 @@ a, a:hover{
     font-size: 2.5em;
     margin: 0;
 }
-.what-we-do-headline::after{
+.headline::after{
 	content: '';
     position: absolute;
 	background: #212121;
@@ -309,6 +299,86 @@ a, a:hover{
 
 
 /***************** what we do part end *************/
+
+
+/***************** associates part start ***********/
+.associates-container{
+    height: auto;
+}
+
+.associates-headline-container{
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.associates-container .content{
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.associates-container .img-container{
+    margin: 3vw;
+    /border: 1px solid black;
+}
+.associates-container .img-container img{
+    width: 20vw;
+    height: auto;
+}
+
+
+/***************  associates part end  **************/
+
+
+/**************    featured projects   **************/
+
+.featured-projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5vw;
+}
+
+.featured-projects-container .content{
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.featured-projects-container .content .project-card{
+    border-radius: .5vw;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+}
+
+.featured-projects-container .content .project-card .project-img{
+    width: 100%;
+}
+
+.featured-projects-container .content .project-card .descriptor{
+    position: absolute;
+    bottom: 0;
+    background: rgba(245,245,245, .6);
+    padding: .3em;
+    text-align: center;
+}
+.featured-projects-container .content .project-card .descriptor .name{
+    font-family: 'patua one';
+}
+.featured-projects-container .content .project-card .descriptor .brief{
+    font-family: roboto;
+}
+
+
+
+
 
 /*****************      form part      **************/
 
