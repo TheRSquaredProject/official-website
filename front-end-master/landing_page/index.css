@@ -30,73 +30,8 @@ a, a:hover{
 }
 
 
-/*navbar start */
-.nav-container{
-	z-index: 2;
-	display: flex;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	position: absolute;
-	width: 100vw;
-	color: aliceblue;			/*color of everything in the nav is aliceblue */
-	background: linear-gradient(to bottom, rgba(21,21,21,.4), rgba(21,21,21,.3), rgba(21,21,21,.2),rgba(21,21,21,0));
-	/min-height: 5em;
-	/border: 1px solid white;
-	/position: fixed;
-}
-@keyframes nav-container-fixed{
-	0%{
-		margin-top: -100%;;
-	}
-	100%{ margin-top: 0;}
-}
-.nav-container-fixed{
-	position: fixed;
-	background: rgba(21,21,21,1);
-	animation-name: nav-container-fixed;
-	animation-duration: .5s;
-}
-
-
-.nav-logo{
-	width: 16%;
-	padding-left: 2em;
-}
-.nav-logo > .logo-text{
-	font-family: pacifico;
-	font-size: 2vw;
-	color: aliceblue;
-}
-
-
-.nav-item:hover{
-	font-weight: 600;
-}
-.nav-links{
-	padding-right: 4em;
-}
-.nav-links > .nav-item{
-	font-family: Roboto;
-	font-size: 1.2vw;
-	color: aliceblue;
-	padding: 1em;
-	padding-right: 2em;
-}
-.nav-links > button{
-	background: rgba(224,224,224,.8);
-	font-size: 1.2vw;
-	padding: .6em;
-	padding-left: 1.8vw;
-	padding-right: 1.8vw;
-}
-.nav-links > button:hover{
-	background: rgba(224,224,224, 1);
-}
-
-/*navbar end*/
-
-
 .land{
+    /border: 1em solid yellow;
 	position: relative;
 	overflow: hidden;
 	/border: 1em solid black;
@@ -111,21 +46,15 @@ a, a:hover{
 	z-index: -1;
 }*/
 .land-cover-img {
-  z-index: -1;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, 0);
-  min-height: 100%;
-  min-width: 100%;
-}
-@media (max-width: 400px){
-	.land-cover-img{
-		padding: 0;
-		/position: absolute;
-		z-index: -1;
-		/width: 200%;
-		/left: 15%;
-	}
+      z-index: -1;
+      left: 50%;
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 
@@ -137,10 +66,13 @@ a, a:hover{
 	position: absolute;
 	top: 37%;
 }
-.headline{
+.land-content .headline{
 	font-family: 'Patua One', cursive;
 	padding: 1.2vw;
 	font-size: 3.1vw;
+}
+.land-content .headline::after{
+    display: none;
 }
 .details{
 	padding-bottom: 2vw;
@@ -169,31 +101,26 @@ a, a:hover{
 
 
 .about-us-container{
-	/display: none;
+    margin-top: 2em;
 	display: flex;
 	height: 100vh;
 	background: #FEFEFE;
-	/background: #61E786;
-	/justify-content: center;
-	//color: rgba(200,200,200,1);
 	color: #212121;
 	position: relative;
 	display: flex;
 	justify-content: center;
+    overflow-y: hidden;
 }
 .about-us-content{
-	/border: 1px solid red;
 	position: relative;
 	align-self: flex-start;
 	display: flex;
 	flex-direction: row;
-	height: auto;
 	align-self: center;
 }
 .text-container{
 	position: relative;
 	padding: 1vw;
-	/border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	min-width: 70%;
@@ -203,6 +130,7 @@ a, a:hover{
 	left: 1em;
 	position: relative;
 	display: flex;
+    justify-content: flex-start;
 }
 .text-container > .headline-container::before{
 	content: '';
@@ -215,10 +143,13 @@ a, a:hover{
 .text-container .headline{
 	position: relative;
 	padding-left: 2vw;
-	font-size: 4vw;
+	font-size: 3em;
+}
+.text-container .headline::after{
+    display: none;
 }
 .text-container-content{
-	font-size: 1.4em;
+	font-size: 1.2em;
 	padding: 1vw;
 }
 .image-container{
@@ -241,39 +172,45 @@ a, a:hover{
 	background: #FEFEFE;
 	height: 100vh;
 	position: relative;
+    justify-content: center;
 	display: flex;
 	flex-direction: column;
 }
-.what-we-do-headline-container{
+.headline-container{
 	position: relative;
-	padding-top: 2.5em;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.what-we-do-headline{
+.headline{
+    font-family: 'Patua One', cursive;
+    align-self: center;
 	color: #212121;
 	position: relative;
 	text-align: center;
 	padding: 1vw;
+    font-size: 2.5em;
+    margin: 0;
 }
-.what-we-do-headline::after{
+.headline::after{
 	content: '';
-	position: absolute;
+    position: absolute;
 	background: #212121;
 	top: 100%;
-	left: 0;
-	width: 57%;
+    left: 0;
+	width: 100%;
 	height: .1em;
-	left: calc(50% - 3.5em);
 	border-radius: 7em;
 }
-
 
 .what-we-do-content{
 	margin-top: 2vw;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 }
 .what-we-do-content  .card-img-top{
+    align-self: center;
 	height: 18vw;
 	padding: 3vw;
 	padding-bottom: 0;
@@ -281,13 +218,13 @@ a, a:hover{
 	margin: 0;
 }
 
-.what-we-do-content .card{
+.what-we-do-content .what-we-do-card{
 	color: #212121;
 	background: rgba(255,255,255,0);
-	min-width: 2vw;
-	margin: 2em;
+	min-width: 20vw;
+    max-width: 30vw;
+	margin: 2vw 5vw;
 	padding-top: 0;
-	border: 0;
 }
 
 .what-we-do-content .card-link{
@@ -296,6 +233,86 @@ a, a:hover{
 
 
 /***************** what we do part end *************/
+
+
+/***************** associates part start ***********/
+.associates-container{
+    height: auto;
+}
+
+.associates-headline-container{
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.associates-container .content{
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.associates-container .img-container{
+    margin: 3vw;
+    /border: 1px solid black;
+}
+.associates-container .img-container img{
+    width: 20vw;
+    height: auto;
+}
+
+
+/***************  associates part end  **************/
+
+
+/**************    featured projects   **************/
+
+.featured-projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5vw;
+}
+
+.featured-projects-container .content{
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.featured-projects-container .content .project-card{
+    border-radius: .5vw;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+}
+
+.featured-projects-container .content .project-card .project-img{
+    width: 100%;
+}
+
+.featured-projects-container .content .project-card .descriptor{
+    position: absolute;
+    bottom: 0;
+    background: rgba(245,245,245, .6);
+    padding: .3em;
+    text-align: center;
+}
+.featured-projects-container .content .project-card .descriptor .name{
+    font-family: 'patua one';
+}
+.featured-projects-container .content .project-card .descriptor .brief{
+    font-family: roboto;
+}
+
+
+
+
 
 /*****************      form part      **************/
 
@@ -382,7 +399,7 @@ a, a:hover{
 	margin-top: 1vw;
 	padding: .9vw 2.6vw .9vw;
 	background: #F7F7F7;
-	border: .08vw solid #212121; /#00BFA5;
+	border: .08vw solid #212121;
 	color: #424242;
 	font-family: roboto;
 	font-size: 1.1em;
