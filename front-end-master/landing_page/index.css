@@ -15,7 +15,6 @@ a, a:hover{
 }
 .first .row > div{
   background: #FFFFFF;
-  border: 1px solid black;
 }
 .hide{
 	display: none;
@@ -320,20 +319,14 @@ a, a:hover{
 .form-container{
 	background: #FEFEFE;
 	display: flex;
-	flex-direction: row;
-	height: 100vh;
-	/background: white;
-	/background: #9792E3;
 	width: 100vw;
 	justify-content: center;
 }
 .wrapper{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
-	height: 100%;
 	align-self: center;
-	box-shadow: 1px 1px 1px #212121;
 }
 .form-content{
 	padding: 4vw 4vw 4vw 5vw;
@@ -409,12 +402,10 @@ a, a:hover{
 .form-content .btn:hover{
 	border: .12vw solid #212121;
 }
-.form-sidebar{
-	width: 30%;
-	background: #212121;
-	height: 100%;
-	align-items: flex-end;
+.footer{
+	height: 30vh;
 }
+
 
 
 
