@@ -1,0 +1,10 @@
+.footer{
+	width: 100%;
+	background: #212121;
+	color: aliceblue;
+	height: 90vw;
+	/height: 20vw;
+	/z-index: 1;
+	/position: relative;
+	/align-items: flex-end;
+}
