@@ -46,15 +46,22 @@ class Person{
      }
 }
 
-var div_select_arr = document.getElementsByClassName('div-name');
 
-function gg(element){
-	element.addEventListener('hover', function(){ console.log("ye"); })
+function divSelectorClassRemover(hoveredDivIndex, divIndexToRemove=4){
+	if(divIndexToRemove > hoveredDivIndex){
+		$('.div-selector-container').removeClass('div'+(divIndexToRemove+1));
+		$('.division-container:first-child').removeClass('divC'+(divIndexToRemove+1))
+		divSelectorClassRemover(hoveredDivIndex, divIndexToRemove-1);
+	}else{
+		return 0;
+	}
 }
 
-function xx(){ console.log('xx'); }
-
-for(i=0; i<div_select_arr.length; i++){
-	gg(div_select_arr[i]);
-}
-
+$(document).ready(function(){
+	$('.div-name').hover(function(){
+		let divIndex = $('.div-name').index(this);
+		divSelectorClassRemover(divIndex);
+		$('.div-selector-container').addClass('div'+(divIndex+1));
+		$('.division-container:first-child').addClass('divC'+(divIndex+1))
+	})
+})
