@@ -109,6 +109,7 @@ a, a:hover{
 	min-width: 100%;
 	transition: .2s;
 	transition-timing-function: ease-out;
+	transition-delay: .15s;
 }
 .divC1{
 	margin-left: 0%;
