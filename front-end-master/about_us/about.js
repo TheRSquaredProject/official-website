@@ -1,8 +1,8 @@
-class Division{
-	 constructor{
-
-	 }
-}
+//class Division{
+//	 constructor{
+//
+//	 }
+//}
 
 class Person{
 	 //biography should be a markdown text
@@ -45,3 +45,16 @@ class Person{
 		 this.DOMnode.appendChild(bioElem);
      }
 }
+
+var div_select_arr = document.getElementsByClassName('div-name');
+
+function gg(element){
+	element.addEventListener('hover', function(){ console.log("ye"); })
+}
+
+function xx(){ console.log('xx'); }
+
+for(i=0; i<div_select_arr.length; i++){
+	gg(div_select_arr[i]);
+}
+

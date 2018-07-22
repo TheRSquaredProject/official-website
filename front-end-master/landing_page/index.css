@@ -15,7 +15,6 @@ a, a:hover{
 }
 .first .row > div{
   background: #FFFFFF;
-  border: 1px solid black;
 }
 .hide{
 	display: none;
@@ -31,11 +30,11 @@ a, a:hover{
 
 
 .land{
-    /border: 1em solid yellow;
+	border: 1em solid yellow;
 	position: relative;
 	overflow: hidden;
-	/border: 1em solid black;
-	/display: none;
+	border: 1em solid black;
+	display: none;
 	height: 100vh;
 	padding: 0;
 }
@@ -256,7 +255,7 @@ a, a:hover{
 }
 .associates-container .img-container{
     margin: 3vw;
-    /border: 1px solid black;
+    border: 1px solid black;
 }
 .associates-container .img-container img{
     width: 20vw;
@@ -320,20 +319,14 @@ a, a:hover{
 .form-container{
 	background: #FEFEFE;
 	display: flex;
-	flex-direction: row;
-	height: 100vh;
-	/background: white;
-	/background: #9792E3;
 	width: 100vw;
 	justify-content: center;
 }
 .wrapper{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
-	height: 100%;
 	align-self: center;
-	box-shadow: 1px 1px 1px #212121;
 }
 .form-content{
 	padding: 4vw 4vw 4vw 5vw;
@@ -384,7 +377,6 @@ a, a:hover{
 .form-message-container > textarea{
 	padding: .8vw;
 	color: #212121;
-	font-size:
 	font-family: roboto;
 	margin-top: 1.5vw;
 	background: #F7F7F7;
@@ -404,31 +396,110 @@ a, a:hover{
 	font-family: roboto;
 	font-size: 1.1em;
 	transition: .4s;
-	/font-weight: 600;
+	font-weight: 600;
 }
 .form-content .btn:hover{
 	border: .12vw solid #212121;
 }
-.form-sidebar{
-	width: 30%;
-	background: #212121;
-	height: 100%;
-	align-items: flex-end;
+.footer{
+	height: 30vh;
 }
 
 
 
+/*------------------------------*/
+.contact-card-container{
+	max-width: 700px !important;
+}
+.card{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.contact-heading{
+	margin-bottom:30px; 
+}
+.contact-heading span:nth-of-type(1){
+	display: block;
+	font-family: 'Raleway';
+	font-size: 2.2rem;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	color:teal;
+}
+.contact-heading span:nth-of-type(2){
+	display: block;
+	font-family: 'Raleway';
+	font-size: 1.1rem;
+	font-weight: bold;
+	letter-spacing: 1.4px;
+	color:#546E7A;
+}
+.form-row{
+	margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.submit-button{
+    border: 0.1rem solid #9b4dca;
+    border-radius: .4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+	height: 40px;
+	padding: 0px 20px 0px 20px;
+	letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	white-space: nowrap;
+	background-color: transparent;
+	color: #8138af;
+	transition: all linear 0.1s;
+}
+.submit-button:hover{
+	color:white;
+	background-color: #9b4dca;
+}
+.submit-button:active{
+	background-color: #8138af;
+}
+.submit-button:focus{
+	outline: none;
+}
+.join-team{
+	display: none;
+	float: right;
+	text-align: center;
+}
+.join-team span:nth-of-type(1){
+	display: block;
+	font-size: 15px;
+	color:#546E7A;
+	letter-spacing: 0.2px;
+}
+.join-team a{
+	margin-top: -3px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	color:#37474F;
+	transition: all linear 0.1s;
+}
+.join-team a:hover{
+	color:#263238;
+}
+.contact-footer{
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left:15px;
+	right: 15px;
+	height: 50px;
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+	padding:0px 25px 0px 25px;
+}
+.form-submit-row{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
