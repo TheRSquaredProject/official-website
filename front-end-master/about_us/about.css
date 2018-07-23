@@ -57,6 +57,32 @@ a, a:hover{
 	display: flex;
 	flex-direction: row;
 }
+.div-selector-container:after{
+	transition: .2s;
+	content: '';
+	align-self: center;
+	position: relative;
+	top: 2em;
+   width: 20px;
+   border-bottom: 20px solid #212121;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+}
+.div1:after{
+	left: -88.5%;
+}
+.div2:after {
+	left: -69.5%;
+}
+.div3:after {
+	left: -51%;
+}
+.div4:after{
+	left: -32.5%;
+}
+.div5:after{
+	left: -12.5%;
+}
 .div-selector-container > .div-name{
 	font-family: raleway;
 	font-size: 1.3em;
@@ -65,22 +91,39 @@ a, a:hover{
 	display: flex;
 	flex-direction: column;
 }
-.div-selector-container > .div-name:first-child:after {
-    content: '';
-	align-self: center;
-	position: relative;
-	top: .3em;
-    width: 20px;
-    border-bottom: 20px solid #212121;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-}
-.division-container{
-	font-family: roboto;
+.divisions-container{
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	flex-direction: row;
 	align-self: center;
 	width: 90%;
 	height: 80%;
+	position: relative;
 }
+.division-container{
+	position: relative;
+	font-family: roboto;
+	min-width: 100%;
+	transition: .2s;
+	transition-timing-function: ease-out;
+	transition-delay: .15s;
+}
+.divC1{
+	margin-left: 0%;
+}
+.divC2{
+	margin-left: -100%;
+}
+.divC3{
+	margin-left: -200%;
+}
+.divC4{
+	margin-left: -300%;
+}
+.divC5{
+	margin-left: -400%;
 .content-container{
 	height: 100%;
 	display: flex;
