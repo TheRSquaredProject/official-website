@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122703977-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122703977-1');
+    </script>
+    
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,11 +24,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico|Patua+One|Roboto|Roboto+Condensed|Lato|Raleway" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
 
-
-
 	<!-- jquery -->
 	<script src="../common_files/js/jquery-3.1.1.js"></script>
-	<script src="index.js"></script>
+	<!-- <script src="index.js"></script> -->
 	<title>The R-Squared Project!</title>
 </head>
 
@@ -172,31 +180,46 @@
     </div>
 
 
-
-	<div class="form-container scrollify">
-		<div class="wrapper">
-            <div class="form-content">
-                <div class="form-headline-container">
-                    <h1 class="form-headline">GET IN TOUCH</h1>
-                    <h3 class="form-headline-sub">Let us know your thoughts</h3>
+    <form id="contact-us" class="container contact-card-container"  class="row" action="https://formspree.io/thersquaredproject@gmail.com" method="POST">
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-body">
+                    <div class="contact-heading">
+                        <span>GET IN TOUCH</span>
+                        <span>Let us know your thoughts</span>
+                    </div>
+                    <div class="contact-texboxes">
+                        <div class="form-row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="First Name" required="required" placeholder="First name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="Last Name" required="required" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <input type="email" class="form-control" name="Email" required="required" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" name="Message" required="required" placeholder="Write a message.."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row form-submit-row">
+                            <div class="col-12">
+                                <input type="submit" class="submit-button" value="Submit">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form class="form-body">
-                    <div class="form-name-container form-group">
-                        <input type="text" class="form-control" placeholder="First Name">
-                        <input type="text" class="form-control" placeholder="First Name">
-                    </div>
-                    <div class="form-mail-container form-group">
-                        <input type="email" class="form-control" placeholder="Example@gmail.com">
-                    </div>
-                    <div class="form-message-container form-group">
-                        <textarea name="message" placeholder="Your Message" class="form-control"></textarea>
-                    </div>
-                    <button class="btn">Submit</button>
-                </form>
-            </div>
-		</div>
-	</div>
-
+            </div>      
+        </div>
+    </form>
+    
+    
+    <br/><br/><br/><br/>
 	<div class="footer">
 
 	</div>
