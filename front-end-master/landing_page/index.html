@@ -25,8 +25,17 @@
     <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
 
 	<!-- jquery -->
-	<script src="../common_files/js/jquery-3.1.1.js"></script>
-	<!-- <script src="index.js"></script> -->
+    <script src="../common_files/js/jquery-3.1.1.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function(event) {
+                var target = $($(this).attr("href")).offset().top - 140;
+                $('body').animate({scrollTop:target}, 300);
+                event.preventDefault();
+            });
+        });
+    </script>
 	<title>The R-Squared Project!</title>
 </head>
 
@@ -41,7 +50,7 @@
 			<a href="../Projects/projects.html" class="nav-item">Projects</a>
 			<a href="#" class="nav-item">Achievements</a>
 			<a href="../meet_the_team/team.html" class="nav-item">About Us</a>
-			<button type="button" class="btn">Contact Us</button>
+			<a href="#contact-us" class="nav-item">Contact Us</a>
 		</div>
 	</nav>
 	<div class="container-fluid land">
@@ -236,6 +245,10 @@
 
     <div class="go-top">
 
+    </div>
+
+    <div id="copyright">
+        Copyright © 2018 The R-Squared Project 
     </div>
 </body>
 
