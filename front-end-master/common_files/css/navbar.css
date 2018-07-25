@@ -62,6 +62,12 @@
 .nav-links > button:hover{
 	background: rgba(224,224,224, 1);
 }
+.nav-links .btn{
+	padding: 1em 1.5em 1em;
+}
+.nav-links .btn:hover{
+	background: rgba(255,255,255,.7);
+}
 
 /*navbar end*/
 

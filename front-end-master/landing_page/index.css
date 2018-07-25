@@ -149,6 +149,7 @@ a, a:hover{
 }
 .text-container-content{
 	font-size: 1.2em;
+	line-height: 1.8em;
 	padding: 1vw;
 }
 .image-container{
@@ -210,6 +211,7 @@ a, a:hover{
 }
 .what-we-do-content  .card-img-top{
     align-self: center;
+	width: 18vw;
 	height: 18vw;
 	padding: 3vw;
 	padding-bottom: 0;
