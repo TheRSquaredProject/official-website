@@ -31,6 +31,10 @@ a, a:hover{
 .hidden{
 	 display: none;
 }
+.person ul{
+	list-style-type: none;
+	padding-left: 0;
+}
 
 
 /********* tweaking the navbar ********/
@@ -43,10 +47,6 @@ a, a:hover{
 
 /*********        person        ********/
 .team-container{
-<<<<<<< Updated upstream
-=======
-	/visibility: hidden;
->>>>>>> Stashed changes
 	height: 100vh;
 	width: 100vw;
 	position: relative;
@@ -67,7 +67,7 @@ a, a:hover{
 	align-self: center;
 	position: relative;
 	top: 2em;
-   width: 20px;
+	width: 20px;
    border-bottom: 20px solid #212121;
    border-left: 20px solid transparent;
    border-right: 20px solid transparent;
@@ -107,6 +107,7 @@ a, a:hover{
 	position: relative;
 }
 .division-container{
+	height: 100%;
 	position: relative;
 	font-family: roboto;
 	min-width: 100%;
@@ -128,23 +129,29 @@ a, a:hover{
 }
 .divC5{
 	margin-left: -400%;
+}
 .content-container{
 	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
 	position: relative;
 }
 .person{
 	display: flex;
 	flex-direction: column;
 	max-width: 20%;
+	max-height: 100%;
+	position: relative;
 }
 .person .display-picture img{
 	border-radius: 100%;
 	width: 100%;
 	height: auto;
+}
+.person .content{
+	overflow: hidden;
 }
 .person .name{
 	font-family: raleway;
@@ -159,4 +166,131 @@ a, a:hover{
 	text-align: justify;
 	display: flex;
 	justify-content: center;
+}
+
+/********** pop up with the details *************/
+.pop-up-container{
+	z-index: 9;
+	position: fixed;
+	background: rgba(21,21,21,.6);
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	transition: .5s;
+}
+.pop-up > .cross{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 4em;
+	background: #F5F5F5;
+	border-bottom-right-radius: .3vw;
+	border-top-right-radius: .3vw;
+}
+.pop-up{
+	display: flex;
+	flex-direction: column;
+	top: 12%;
+	position: relative;
+	/align-self: center;
+	height: 83%;
+	width: 82%;
+	background: #F5F5F5;
+	border-radius: .3vw;
+	border-top-right-radius: 0vw;
+	transition: .5s;
+}
+@keyframes fadeOut{
+	0%{
+		oapcity: 1;
+	}
+	99%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+		/display: none;
+	}
+}
+.pop-up-hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+.pop-up-shown{
+	opacity: 1;
+}
+.pop-up .profile-data{
+	height: 20vh;
+	display: flex;
+	/justify-content: space-around;
+}
+.profile-data > img{
+	box-shadow: .2vw .2vw .7vw #212121;
+	margin-left: 3vw;
+	width: 27vh;
+	align-self: flex-end;
+}
+
+.profile-data .info{
+	font-family: Raleway;
+	margin-top: 1em;
+	margin-left: 1.8em;
+	display: flex;
+	flex-direction: column;
+}
+.info .name{
+	font-size: 2.4em;
+}
+.info .designation{
+	margin-top: .45vw;
+	font-size: 1.25em;
+}
+.info .project-name{
+	margin-top: .3vw;
+	font-size: 1em;
+}
+
+.profile-data .social-links{
+	flex-grow: 1;
+	overflow: hidden;
+	display: flex;
+	padding-right: 2vw;
+	justify-content: flex-end;
+}
+.social-links img{
+	margin: .5vw;
+	width: 3.5vw;
+}
+.social-links a{
+	align-self: center;
+}
+
+
+.bio{
+	margin-top: 4vw;
+	align-self: center;
+	width: 92%;
+}
+.bio > .info{
+	font-size: 1em;
+	font-family: 'Lato',sans-serif;
+}
+.bio > .info > .line{
+	margin-top: -.7vw;
+	display: flex;
+	flex-direction: row;
+}
+.line > .title{
+	min-width: 10em;
+}
+.line > p{
+	margin-left: 1vw;
+}
+
+.bio > .main-bio{
+	font-size: 1.2em;
+	font-family: 'Lato';
+	margin-top: 2vw;
 }

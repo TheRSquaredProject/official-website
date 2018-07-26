@@ -1,65 +1,65 @@
-function scrollSection(){
-	alert("gg");
-}
+//function scrollSection(){
+//	alert("gg");
+//}
 
-$(document).ready(function(){
-	/*$(function() {
-		$.scrollify({
-			section : ".scrollify",
-			//scrollbars: false,
-			scrollSpeed: 800,
-		});
-	});*/
-
-
-	//automatically resizing textarea
-	var resizingTextareas = [].slice.call(document.querySelectorAll('textarea[autoresize]'));
-
-	resizingTextareas.forEach(function(textarea) {
-	  textarea.addEventListener('input', autoresize, false);
-	});
-
-	function autoresize() {
-	  this.style.height = 'auto';
-	  this.style.height = this.scrollHeight+'px';
-	  this.scrollTop = this.scrollHeight;
-	  window.scrollTo(window.scrollLeft,(this.scrollTop + this.scrollHeight));
-	}
-
-
-	//change content according to the form name hovered on
-	var formOptions =  $('.form-option');
-	$('.form-option').hover(function(){
-		console.log(this);
-		let index = $('.form-option').index(this);
-		console.log(index);
-		if(index == 0){
-			$('.form-arrow').removeClass('arrow-right');
-			$('.form-arrow').addClass('arrow-left');
-			$('.contact-us-form').removeClass('go-left');
-			$('.be-a-volunteer-form').removeClass('be-a-volunteer-fade-in');
-
-		}else if(index == 1){
-			$('.form-arrow').removeClass('arrow-left');
-			$('.form-arrow').addClass('arrow-right');
-			$('.contact-us-form').addClass('go-left');
-			$('.be-a-volunteer-form').addClass('be-a-volunteer-fade-in');
+//$(document).ready(function(){
+	window.addEventListener('scroll', function(){
+		if(window.pageYOffset > document.getElementsByClassName('land')[0].offsetHeight){
+			document.getElementsByClassName('nav-container')[0].classList.add('nav-fixed');
+		}else{
+			document.getElementsByClassName('nav-container')[0].classList.remove('nav-fixed');
 		}
 	})
-
-
-
-	//check for the scroll even and add or remove the 'nav-container-fixed' class when scrolled past a certain point
-	function checkScroll(){
-		console.log("called");
-		if(document.body.scrollTop >= $('.land').height()){
-			$('.nav-container').addClass('nav-container-fixed');
-		}else{
-			//console.log("g");
-			$('.nav-container').removeClass('nav-container-fixed');
-		}
-	}
-	document.Onscroll = checkScroll(); 		//it gets called only once when the page is loaded and never gets called later when scrolled.
+//})
+//
+//	//automatically resizing textarea
+//	var resizingTextareas = [].slice.call(document.querySelectorAll('textarea[autoresize]'));
+//
+//	resizingTextareas.forEach(function(textarea) {
+//	  textarea.addEventListener('input', autoresize, false);
+//	});
+//
+//	function autoresize() {
+//	  this.style.height = 'auto';
+//	  this.style.height = this.scrollHeight+'px';
+//	  this.scrollTop = this.scrollHeight;
+//	  window.scrollTo(window.scrollLeft,(this.scrollTop + this.scrollHeight));
+//	}
+//
+//
+//	//change content according to the form name hovered on
+//	var formOptions =  $('.form-option');
+//	$('.form-option').hover(function(){
+//		console.log(this);
+//		let index = $('.form-option').index(this);
+//		console.log(index);
+//		if(index == 0){
+//			$('.form-arrow').removeClass('arrow-right');
+//			$('.form-arrow').addClass('arrow-left');
+//			$('.contact-us-form').removeClass('go-left');
+//			$('.be-a-volunteer-form').removeClass('be-a-volunteer-fade-in');
+//
+//		}else if(index == 1){
+//			$('.form-arrow').removeClass('arrow-left');
+//			$('.form-arrow').addClass('arrow-right');
+//			$('.contact-us-form').addClass('go-left');
+//			$('.be-a-volunteer-form').addClass('be-a-volunteer-fade-in');
+//		}
+//	})
+//
+//
+//
+//	//check for the scroll even and add or remove the 'nav-container-fixed' class when scrolled past a certain point
+//	function checkScroll(){
+//		console.log("called");
+//		if(document.body.scrollTop >= $('.land').height()){
+//			$('.nav-container').addClass('nav-container-fixed');
+//		}else{
+//			//console.log("g");
+//			$('.nav-container').removeClass('nav-container-fixed');
+//		}
+//	}
+//	document.Onscroll = checkScroll(); 		//it gets called only once when the page is loaded and never gets called later when scrolled.
 
 //	var j = jQuery.noConflict();
 //    j( function() {
@@ -104,4 +104,4 @@ $(document).ready(function(){
 		}, 2000);*/
 		//alert("gg");
 //	}
-})
+//})

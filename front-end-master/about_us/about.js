@@ -57,6 +57,17 @@ function divSelectorClassRemover(hoveredDivIndex, divIndexToRemove=4){
 	}
 }
 
+function outClickListener(){
+	console.log(event.target);
+	if(!$(event.target).closest('#pop-up-window').length) {
+		console.log('called');
+		if($('.pop-up-container')[0].classList.contains('pop-up-shown')) {
+			$('.pop-up-container')[0].classList.remove('pop-up-shown');
+			$('.pop-up-container')[0].classList.add('pop-up-hidden');
+		}
+	}
+}
+
 $(document).ready(function(){
 	$('.div-name').hover(function(){
 		let divIndex = $('.div-name').index(this);
@@ -64,4 +75,15 @@ $(document).ready(function(){
 		$('.div-selector-container').addClass('div'+(divIndex+1));
 		$('.division-container:first-child').addClass('divC'+(divIndex+1))
 	})
+
+	$(".person").click(function(){
+		$('.pop-up-container')[0].classList.add("pop-up-shown");
+		$('.pop-up-container')[0].classList.remove("pop-up-hidden");
+	})
+
+	$(".cross").click(function(){
+		$('.pop-up-container')[0].classList.remove("pop-up-shown",
+			$('.pop-up-container')[0].classList.add("pop-up-hidden"));
+	})
+
 })
