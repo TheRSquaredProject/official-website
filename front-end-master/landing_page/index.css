@@ -29,6 +29,23 @@ a, a:hover{
 }
 
 
+
+.nav-links > .nav-item{
+	color: aliceblue;
+}
+.nav-links .btn{
+	background: aliceblue;
+}
+.nav-fixed .nav-item{
+	color: #ffcc00;
+}
+.nav-fixed > .nav-links .btn{
+	background: rgba(225,190,0,1);
+}
+
+
+
+
 .land{
 	position: relative;
 	overflow: hidden;
