@@ -503,7 +503,7 @@ a, a:hover{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-#copyright{
+.copyright{
 	position: relative;
 	bottom: 0px;
 	width: 100%;
