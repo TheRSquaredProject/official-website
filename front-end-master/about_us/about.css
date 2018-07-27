@@ -180,11 +180,14 @@ a, a:hover{
 	justify-content: center;
 	transition: .5s;
 }
-.pop-up > .cross{
-	position: absolute;
+.pop-up .cross{
+	position: relative;
+	align-self: flex-start;
+	box-shadow: 0px 0px 0px;
 	top: 0;
-	left: 100%;
+	right: 0;
 	width: 4em;
+	padding: 1em;
 	background: #F5F5F5;
 	border-bottom-right-radius: .3vw;
 	border-top-right-radius: .3vw;
@@ -256,7 +259,7 @@ a, a:hover{
 	flex-grow: 1;
 	overflow: hidden;
 	display: flex;
-	padding-right: 2vw;
+	padding-right: 0vw;
 	justify-content: flex-end;
 }
 .social-links img{
