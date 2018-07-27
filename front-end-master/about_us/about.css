@@ -88,6 +88,7 @@ a, a:hover{
 	left: -12.5%;
 }
 .div-selector-container > .div-name{
+	cursor: pointer;
 	font-family: raleway;
 	font-size: 1.3em;
 	margin-left: 1em;
@@ -107,6 +108,7 @@ a, a:hover{
 	position: relative;
 }
 .division-container{
+	width: 100%;
 	height: 100%;
 	position: relative;
 	font-family: roboto;
@@ -139,33 +141,61 @@ a, a:hover{
 	position: relative;
 }
 .person{
+	cursor: default;
+	margin-top: 2vw;
 	display: flex;
 	flex-direction: column;
 	max-width: 20%;
-	max-height: 100%;
+	height: 91%;
 	position: relative;
+	padding: .3vw 1vw .3vw;
+	transition: .2s;
+}
+.person:hover{
+	background: rgba(21,21,21,.1);
 }
 .person .display-picture img{
+	margin-top: 1vw;
 	border-radius: 100%;
 	width: 100%;
 	height: auto;
 }
 .person .content{
+	margin-top: 3vw;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
 	overflow: hidden;
+	/border: 1px solid green;
 }
 .person .name{
 	font-family: raleway;
-	padding: 1em;
+	padding-top: 1vw;
 	padding-bottom: .5em;
 	font-size: 1.5em;
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	/border: 1px solid black;
+}
+.person .bio{
+	margin-top: 1vw;
+	width: 100%;
+	/border: 1px solid black;
+	flex-grow: 1;
 }
 .person .bio p{
+	/border: 1px solid black;
 	text-align: justify;
-	display: flex;
-	justify-content: center;
+	word-break: normal;
+}
+.person .bio span{
+	cursor: pointer;
+	color: deepskyblue;
+}
+.person .bio span:hover{
+	text-decoration: underline;
+	text-shadow: 0px 0px .01px deepskyblue;
 }
 
 /********** pop up with the details *************/
@@ -189,8 +219,12 @@ a, a:hover{
 	width: 4em;
 	padding: 1em;
 	background: #F5F5F5;
-	border-bottom-right-radius: .3vw;
 	border-top-right-radius: .3vw;
+	cursor: pointer;
+	transition: .2s;
+}
+.pop-up .cross:hover{
+	background: rgba(21,21,21,.14);
 }
 .pop-up{
 	display: flex;
@@ -202,7 +236,6 @@ a, a:hover{
 	width: 82%;
 	background: #F5F5F5;
 	border-radius: .3vw;
-	border-top-right-radius: 0vw;
 	transition: .5s;
 }
 @keyframes fadeOut{
@@ -265,6 +298,9 @@ a, a:hover{
 .social-links img{
 	margin: .5vw;
 	width: 3.5vw;
+}
+.social-links img:hover{
+	transform: scale(1.05);
 }
 .social-links a{
 	align-self: center;
