@@ -169,10 +169,11 @@ a, a:hover{
 	/border: 1px solid green;
 }
 .person .name{
+	border: 1px solid black;
 	font-family: raleway;
 	padding-top: 1vw;
 	padding-bottom: .5em;
-	font-size: 1.5em;
+	font-size: 1.5vw;
 	display: flex;
 	width: 100%;
 	justify-content: center;

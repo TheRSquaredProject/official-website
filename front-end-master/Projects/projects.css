@@ -77,3 +77,30 @@ a, a:hover{
 .project:last-child{
 	margin-bottom: 15vw;
 }
+
+@media only screen and (max-width: 600px) {
+	.projects-container{
+		top: 15vw;
+	}
+	.project .title{
+		font-size: 2.3vw;
+	}
+	.description-container{
+		flex-direction: column;
+	}
+	.infograph{
+		width: 100%;
+	}
+	.description-container{
+		width: 92vw;
+	}
+	.description-container > .description{
+		padding-left: 0;
+		padding-top: 5vw;
+		width: 100%;
+		font-size: 3vw;
+	}
+	.description > h2{
+		font-size: 7.1vw;
+	}
+}
