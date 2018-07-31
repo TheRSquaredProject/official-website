@@ -95,7 +95,8 @@ a, a:hover{
 	color: aliceblue;
 }
 .land-content > .land-button{
-	background-color: rgba(255,255,255,.7);
+	color:aliceblue;
+	font-family: 'Patua One', cursive;
 	margin-top: 1vw;
 	padding: 1vw;
 	padding-left: 1.8em;
@@ -106,7 +107,7 @@ a, a:hover{
 }
 .land-button:hover{
 	background: rgba(255,255,255,.3);
-	border: 2px solid rgba(21,21,21,.8);
+	
 }
 
 /*************************  land page ends  ***********************************/
