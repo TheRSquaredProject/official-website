@@ -18,31 +18,39 @@
     <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
 
 	<!-- jquery -->
-	<script src="../common_files/js/jquery-3.1.1.js"></script>
-	<title>The R-Squared Project!</title>
+    <script src="../common_files/js/jquery-3.1.1.js"></script>
+    
+    <!--custom js-->
+    
+    <script src="../common_files/js/custom_js/headerHelpers.js" ></script>
+    <script src="../common_files/js/custom_js/googleAnalytics.js"></script>
+
+	<title>The R-Squared Project</title>
 </head>
 
 <body>
 
 	<nav class="navbar nav-container">
 		<div class="nav-logo">
-			<img src="../common_files/rsquared_logo.png" class="logo">
+			<a href="../landing_page/index.html" class="nav-logo">
+				<img src="../common_files/rsquared_logo.png" class="logo">
+			</a>
 		</div>
 		<div class="nav-links">
 			<a href="../landing_page/index.html" class="nav-item">Home</a>
 			<a href="../Projects/projects.html" class="nav-item">Projects</a>
-			<a href="#" class="nav-item">Achievements</a>
+			<!--<a href="#" class="nav-item">Achievements</a>-->
 			<a href="../about_us/about.html" class="nav-item">About Us</a>
-			<a href="#contact-us"><button type="button" class="btn">Contact Us</button></a>
+			<a href="#contact-us" class="nav-item">Contact Us</a>
 		</div>
 	</nav>
 	<div class="container-fluid land">
 		<div class="land-content container col-8 offset-2">
 			<span class="land-text headline">Understanding Bangladesh through data</span>
 			<span class="land-text details col-12 offset-md-0">
-				A personal project looking at various economic/social aspects of Bangladesh, through the lens of statistics and data-visualization.
+				Looking at various socio-economical issues of Bangladesh, through the lens of statistics and data-visualization.
 			</span>
-			<button class="btn land-button">More about us</button>
+			<button class="btn land-button btn-outline-light">More about us</button>
 		</div>
 		<img src="images/land-cover2.jpg" class="img-fluid land-cover-img">
 	</div>

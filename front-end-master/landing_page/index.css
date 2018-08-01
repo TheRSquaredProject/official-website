@@ -79,23 +79,26 @@ a, a:hover{
 	top: 37%;
 }
 .land-content .headline{
-	font-family: 'Patua One', cursive;
+	font-family: 'Raleway', cursive;
 	padding: 1.2vw;
-	font-size: 3.1vw;
+	font-size: 3.2vw;
+	font-weight: bold;
 }
 .land-content .headline::after{
     display: none;
 }
 .details{
 	padding-bottom: 2vw;
-	font-size: 1.8vw;
+	font-size: 1.5vw;
 }
 .land-content > .land-text{
 	text-align: center;
 	color: aliceblue;
+	font-weight: bold;
 }
 .land-content > .land-button{
-	background-color: rgba(255,255,255,.7);
+	color:aliceblue;
+	font-family: 'Raleway', cursive;
 	margin-top: 1vw;
 	padding: 1vw;
 	padding-left: 1.8em;
@@ -106,7 +109,7 @@ a, a:hover{
 }
 .land-button:hover{
 	background: rgba(255,255,255,.3);
-	border: 2px solid rgba(21,21,21,.8);
+	
 }
 
 /*************************  land page ends  ***********************************/
