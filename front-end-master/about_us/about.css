@@ -139,6 +139,7 @@ a, a:hover{
 	justify-content: space-around;
 	align-items: flex-start;
 	position: relative;
+
 }
 .person{
 	cursor: default;
@@ -150,6 +151,7 @@ a, a:hover{
 	position: relative;
 	padding: .3vw 1vw .3vw;
 	transition: .2s;
+	cursor: pointer;
 }
 .person:hover{
 	background: rgba(21,21,21,.1);
@@ -166,27 +168,25 @@ a, a:hover{
 	justify-content: flex-start;
 	flex-direction: column;
 	overflow: hidden;
-	/border: 1px solid green;
 }
 .person .name{
 	border: 1px solid black;
 	font-family: raleway;
-	padding-top: 1vw;
-	padding-bottom: .5em;
+	padding-top: 1.2vw;
+    padding-bottom: .8em;
 	font-size: 1.5vw;
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	/border: 1px solid black;
+    align-items: center;
+
 }
 .person .bio{
 	margin-top: 1vw;
 	width: 100%;
-	/border: 1px solid black;
 	flex-grow: 1;
 }
 .person .bio p{
-	/border: 1px solid black;
 	text-align: justify;
 	word-break: normal;
 }
@@ -232,7 +232,6 @@ a, a:hover{
 	flex-direction: column;
 	top: 12%;
 	position: relative;
-	/align-self: center;
 	height: 83%;
 	width: 82%;
 	background: #F5F5F5;
@@ -248,7 +247,6 @@ a, a:hover{
 	}
 	100%{
 		opacity: 0;
-		/display: none;
 	}
 }
 .pop-up-hidden{
@@ -261,7 +259,6 @@ a, a:hover{
 .pop-up .profile-data{
 	height: 20vh;
 	display: flex;
-	/justify-content: space-around;
 }
 .profile-data > img{
 	box-shadow: .2vw .2vw .7vw #212121;
