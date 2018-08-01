@@ -142,6 +142,7 @@ a, a:hover{
 	min-height: 100%;
 }
 .text-container > .headline-container{
+	font-family: 'Patua One', sans-serif;
 	left: 1em;
 	position: relative;
 	display: flex;

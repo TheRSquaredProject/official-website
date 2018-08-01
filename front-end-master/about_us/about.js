@@ -125,6 +125,7 @@ $(document).ready(function(){
 	$(".person").click(function(){
 		$('.pop-up-container')[0].classList.add("pop-up-shown");
 		$('.pop-up-container')[0].classList.remove("pop-up-hidden");
+		console.log(this);
 		populatePop_Up(document.getElementsByClassName('pop-up')[0], this);
 	})
 
