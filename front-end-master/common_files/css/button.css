@@ -1,0 +1,28 @@
+.material-button{
+    border: 0.1rem solid #1976D2;
+    border-radius: .4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+	height: 40px;
+	padding: 0px 20px 0px 20px;
+	letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	white-space: nowrap;
+	background-color: transparent;
+	color: #0D47A1;
+	transition: all linear 0.1s;
+}
+.material-button:hover{
+	color:white;
+	background-color: #1976D2;
+}
+.material-button:active{
+	background-color: #0D47A1;
+}
+.material-button:focus{
+	outline: none;
+}
