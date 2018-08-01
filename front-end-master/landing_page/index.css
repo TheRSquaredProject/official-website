@@ -8,7 +8,6 @@ html,body
 html{
 	display: flex;
 	flex-direction: column;
-	overflow-x: hidden;
 }
 a, a:hover{
 	text-decoration: none;
