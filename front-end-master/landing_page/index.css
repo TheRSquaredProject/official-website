@@ -194,7 +194,8 @@ a, a:hover{
 	text-align: center;
 	padding: 1vw;
     font-size: 2.5em;
-    margin: 0;
+	margin: 0;
+	letter-spacing: 1px;
 }
 .headline::after{
 	content: '';
@@ -244,7 +245,9 @@ a, a:hover{
 
 /***************** associates part start ***********/
 .associates-container{
-    height: auto;
+	height: auto;
+	margin-top: 5vh;
+	margin-bottom: 15vh;
 }
 
 .associates-headline-container{
