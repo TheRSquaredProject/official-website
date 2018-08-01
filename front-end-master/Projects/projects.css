@@ -34,7 +34,7 @@ a, a:hover{
 	padding: 2vw;
 	font-size: 2.8em;
 }
-.project .title h1::after{
+/*.project .title h1::after{
 	content: '';
     position: absolute;
 	background: #212121;
@@ -44,8 +44,8 @@ a, a:hover{
 	height: .1em;
 	border-radius: 7em;
 }
+*/
 .description-container{
-	/border: 1em solid green;
 	width: 90vw;
 	display: flex;
 	flex-direction: row;
