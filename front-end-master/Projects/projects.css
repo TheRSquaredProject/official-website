@@ -54,7 +54,7 @@ a, a:hover{
 }
 .infograph{
 	width: 60%;
-	/border: 1em solid black;
+	border: 1em solid black;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -65,13 +65,13 @@ a, a:hover{
 }
 .description-container > .description{
 	font-family: Roboto;
-	/border: 1px solid black;
+	border: 1px solid black;
 	width: 30%;
 	padding-left: 3vw;
 	padding-top: 1vw;
 }
 .description-container > .description > h2{
-	/font-family: Raleway;
+	font-family: Raleway;
 	font-weight: 600;
 }
 .project:last-child{
