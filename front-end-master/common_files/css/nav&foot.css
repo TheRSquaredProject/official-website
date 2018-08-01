@@ -1,10 +1,25 @@
+html{
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(97, 127, 141);
+}
 
+::-webkit-scrollbar-thumb {
+	background: #37474F;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #90A4AE;
+}
 /*navbar start */
 .nav-container{
 	z-index: 2;
 	display: flex;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	position: absolute;
 	width: 100vw;
 	background: linear-gradient(to bottom, rgba(21,21,21,.5), rgba(21,21,21,.35), rgba(21,21,21,.2),rgba(21,21,21,0));
@@ -42,29 +57,26 @@
 }
 .nav-links > .nav-item{
 	font-family: Roboto, sans-serif;
-	font-size: 1.2vw;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
 	color: #ffcc00;
 	padding: 1em;
+
+}
+.nav-links > .nav-item{
+	color: aliceblue;
 	padding-right: 2em;
 }
-.nav-links > button{
-	font-family: Roboto, sans-serif;
-	background: rgba(224,224,224,.8);
-	font-size: 1.2vw;
-	padding: .6em;
-	padding-left: 1.8vw;
-	padding-right: 1.8vw;
+.nav-fixed .nav-item{
+	color: #ffcc00;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	transition: color linear 1s;
 }
-.nav-links > button:hover{
-	background: rgba(224,224,224, 1);
+.nav-fixed > .nav-links .btn{
+	color: #F57F17;
 }
-.nav-links .btn{
-	background: rgba(225,190,0,1);
-	padding: 1em 1.5em 1em;
-}
-.nav-links .btn:hover{
-	background: rgba(255,255,255,.7);
-}
+
 
 
 .footer{

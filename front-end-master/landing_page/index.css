@@ -3,7 +3,7 @@ html,body
     width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 0px;
+	padding: 0px;
 }
 html{
 	display: flex;
@@ -29,20 +29,6 @@ a, a:hover{
 
 
 
-.nav-links > .nav-item{
-	color: aliceblue;
-}
-.nav-links .btn{
-	background: aliceblue;
-}
-.nav-fixed .nav-item{
-	color: #ffcc00;
-}
-.nav-fixed > .nav-links .btn{
-	background: rgba(225,190,0,1);
-}
-
-
 
 
 .land{
@@ -51,12 +37,6 @@ a, a:hover{
 	height: 100vh;
 	padding: 0;
 }
-/*
-.land-cover-img{
-	position: relative;
-	height: auto;
-	z-index: -1;
-}*/
 .land-cover-img {
       z-index: -1;
       left: 50%;
@@ -108,7 +88,6 @@ a, a:hover{
 	transition: .3s;
 }
 .land-button:hover{
-	background: rgba(255,255,255,.3);
 
 }
 
@@ -116,7 +95,6 @@ a, a:hover{
 
 
 .about-us-container{
-    margin-top: 2em;
 	display: flex;
 	height: 100vh;
 	background: #FEFEFE;
@@ -124,7 +102,8 @@ a, a:hover{
 	position: relative;
 	display: flex;
 	justify-content: center;
-    overflow-y: hidden;
+	overflow-y: hidden;
+	padding: 0 7vw;
 }
 .about-us-content{
 	position: relative;
@@ -132,6 +111,7 @@ a, a:hover{
 	display: flex;
 	flex-direction: row;
 	align-self: center;
+
 }
 .text-container{
 	position: relative;
@@ -168,6 +148,8 @@ a, a:hover{
 	font-size: 1.2em;
 	line-height: 1.8em;
 	padding: 1vw;
+	padding-right: 3vw;
+	text-align: justify;
 }
 .image-container{
 	position: relative;
@@ -187,11 +169,10 @@ a, a:hover{
 
 .what-we-do-container{
 	background: #FEFEFE;
-	height: 100vh;
 	position: relative;
     justify-content: center;
-	display: flex;
 	flex-direction: column;
+	margin-bottom: 100px;
 }
 .headline-container{
 	position: relative;
@@ -207,7 +188,8 @@ a, a:hover{
 	text-align: center;
 	padding: 1vw;
     font-size: 2.5em;
-    margin: 0;
+	margin: 0;
+	letter-spacing: 1px;
 }
 .headline::after{
 	content: '';
@@ -221,18 +203,17 @@ a, a:hover{
 }
 
 .what-we-do-content{
-	margin-top: 2vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	text-align: center;
 }
 .what-we-do-content  .card-img-top{
     align-self: center;
-	width: 18vw;
-	height: 18vw;
+	width: 15vw;
 	padding: 3vw;
 	padding-bottom: 0;
-	padding-top: 2vw;
+	padding-top: 9vh;
 	margin: 0;
 }
 
@@ -240,22 +221,27 @@ a, a:hover{
 	color: #212121;
 	background: rgba(255,255,255,0);
 	min-width: 20vw;
-    max-width: 30vw;
-	margin: 2vw 5vw;
+    max-width: 25vw;
+	margin: 0px;
 	padding-top: 0;
+	margin: 0 2vw;
 }
 
 .what-we-do-content .card-link{
 	align-content: space-around;
 }
-
-
+.card-text{
+	text-align: justify;
+    text-justify: inter-word;
+}
 /***************** what we do part end *************/
 
 
 /***************** associates part start ***********/
 .associates-container{
-    height: auto;
+	height: auto;
+	margin-top: 5vh;
+	margin-bottom: 15vh;
 }
 
 .associates-headline-container{
@@ -276,7 +262,7 @@ a, a:hover{
     margin: 3vw;
 }
 .associates-container .img-container img{
-    width: 20vw;
+    width: 10vw;
     height: auto;
 }
 
@@ -359,9 +345,6 @@ a, a:hover{
 	padding: .8vw;
 	background: #F7F7F7;
 }
-.form-container input:focus{
-
-}
 .form-control:focus {
 	background: #FFFFFF;
   border-color: #454545;
@@ -435,7 +418,7 @@ a, a:hover{
 .contact-heading span:nth-of-type(1){
 	display: block;
 	font-family: 'Raleway';
-	font-size: 2.2rem;
+	font-size: 2.4rem;
 	font-weight: bolder;
 	letter-spacing: 2px;
 	color:teal;
@@ -444,9 +427,8 @@ a, a:hover{
 	display: block;
 	font-family: 'Raleway';
 	font-size: 1.1rem;
-	font-weight: bold;
-	letter-spacing: 1.4px;
-	color:#546E7A;
+	letter-spacing: 1px;
+	color:#37474F;
 }
 .form-row{
 	margin-bottom: 10px;
@@ -535,4 +517,9 @@ a, a:hover{
 	text-align: center;
 	line-height: 40px;
 	font-size: 0.8rem;
+}
+.button-container{
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
 }

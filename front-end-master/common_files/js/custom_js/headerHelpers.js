@@ -9,7 +9,7 @@ window.addEventListener('scroll', function(){
 $(document).ready(function() {
     $('a[href^="#"]').click(function(event) {
         var target = $($(this).attr("href")).offset().top - 140;
-        $('body').animate({scrollTop:target}, 300);
+        $('html').animate({scrollTop:target}, 300);
         event.preventDefault();
     });
 });
