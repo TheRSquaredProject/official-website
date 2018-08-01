@@ -24,17 +24,17 @@ html{
     font-size: 2.8em;
 }
 
-/*.about-us-header::after {
+.about-us-header::after {
 	content: '';
     position: absolute;
 	background: #212121;
 	top: 100%;
     left: 0;
 	width: 100%;
-	height: .1em;
+	height: .06em;
 	border-radius: 7em;
 }
-*/
+
 a, a:hover{
 	text-decoration: none;
 }
