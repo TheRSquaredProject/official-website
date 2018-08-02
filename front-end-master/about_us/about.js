@@ -113,7 +113,7 @@ function populatePop_Up(popUp, person){
 		elem.textContent = getPersonChildren('line')[i].getElementsByClassName('title')[0].textContent;
 	})
 	line_p.forEach(function(elem, i){
-		elem.textContent = getPersonChildren('line')[i].getElementsByClassName('data')[0].textContent;
+		elem.innerHTML = getPersonChildren('line')[i].getElementsByClassName('data')[0].innerHTML;
 	})
 	main_bio.innerHTML = getPersonChildren('main-bio')[0].innerHTML;
 }
