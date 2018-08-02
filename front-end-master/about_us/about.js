@@ -3,7 +3,7 @@ class Person{
 	 //biography should be a markdown text
 	 constructor(name, img_url, designation, bio){
 		 if(name === undefined){
-			 //throw some error
+			console.log("Error with Person object")
 		 }
 		 this.name = name;
 		 this.img_url = img_url;
@@ -125,7 +125,6 @@ $(document).ready(function(){
 	$(".person").click(function(){
 		$('.pop-up-container')[0].classList.add("pop-up-shown");
 		$('.pop-up-container')[0].classList.remove("pop-up-hidden");
-		console.log(this);
 		populatePop_Up(document.getElementsByClassName('pop-up')[0], this);
 	})
 
