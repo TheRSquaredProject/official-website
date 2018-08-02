@@ -236,7 +236,10 @@ a, a:hover{
 	cursor: pointer;
 	transition: .2s;
 	margin-left: 0px;
+<<<<<<< HEAD
 	/z-index: 10;
+=======
+>>>>>>> front-end/Final-Hosted
 }
 .pop-up .cross:hover{
 	background: rgba(21,21,21,.14);

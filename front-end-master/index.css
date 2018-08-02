@@ -59,34 +59,9 @@ a, a:hover{
 	background: #000;
 	opacity: 0.5;
 }
-.headline-text{
-	position: relative;
-	top: 48%;
-	transform: translateY(-50%);
-	margin-left: 6.5vw;
-	padding-left: 2vw;
-	border-left: 10px solid #ffcc00;
-}
-
-.headline-text h1{
-	font-family: Montserrat;
-	font-weight: bolder;
-	color: white;
-	font-size: 3.5em;
-}
-.headline-text h2{
-	font-family: 'Roboto';
-	font-weight: 300;
-	color: white;
-	font-size: 1.4em;
-	letter-spacing: 1.5px;
-	margin-top: 10px;
-}
-.action-buttons{
-	position: relative;
-	top: 48%;
-	transform: translateY(-50%);
-	margin-left: 8.5vw;
+.details{
+	padding-bottom: 2vw;
+	font-size: 1.5vw;
 }
 .action-buttons a{
 	margin-right: 20px;
@@ -384,7 +359,7 @@ a, a:hover{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .contact-heading{
-	margin-bottom:30px; 
+	margin-bottom:30px;
 }
 .contact-heading span:nth-of-type(1){
 	display: block;
@@ -446,4 +421,23 @@ a, a:hover{
 	margin-top: 50px;
 	width: 100%;
 	text-align: center;
+	padding: 20px 50px;
+}
+.associates-title{
+	color: white;
+	font-family: 'Raleway';
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	opacity: 0.8;
+	display: block;
+}
+.associates-logo-quilt{
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	height: 100px;
+}
+.associates-logo{
+	max-height: 40px;
+	margin: 0px 30px;
 }
