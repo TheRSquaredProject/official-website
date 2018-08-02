@@ -265,10 +265,19 @@ a, a:hover{
     justify-content: center;
 }
 .associates-container .img-container{
-    margin: 3vw;
+	margin: 3vw;
+	width: 10vw;
+	position: relative;
+}
+.associates-container .img-container:nth-child(1){
+	width: 15vw;
 }
 .associates-container .img-container img{
-    width: 10vw;
+	background: black;
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+    width: 100%;
     height: auto;
 }
 
