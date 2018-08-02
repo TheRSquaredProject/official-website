@@ -37,12 +37,6 @@ a, a:hover{
 	height: 100vh;
 	padding: 0;
 }
-/*
-.land-cover-img{
-	position: relative;
-	height: auto;
-	z-index: -1;
-}*/
 .land-cover-img {
       z-index: -1;
       left: 50%;
@@ -82,20 +76,25 @@ a, a:hover{
 	color: aliceblue;
 	font-weight: bold;
 }
-.land-content > .land-button{
+.land-content #land-button{
+	align-self: center;
+}
+.land-content .land-button{
 	color:aliceblue;
 	font-family: 'Raleway', cursive;
 	margin-top: 1vw;
 	padding: 1vw;
 	padding-left: 1.8em;
 	padding-right: 1.8em;
-	align-self: center;
 	font-size: 1.7vw;
 	transition: .3s;
 }
+.land-button a{
+	color: aliceblue;
+}
 .land-button:hover{
-	background: rgba(255,255,255,.3);
-	
+	color: #212121;
+	background: #F1F1F1;
 }
 
 /*************************  land page ends  ***********************************/
@@ -118,7 +117,7 @@ a, a:hover{
 	display: flex;
 	flex-direction: row;
 	align-self: center;
-	
+
 }
 .text-container{
 	position: relative;
@@ -129,6 +128,7 @@ a, a:hover{
 	min-height: 100%;
 }
 .text-container > .headline-container{
+	font-family: 'Patua One', sans-serif;
 	left: 1em;
 	position: relative;
 	display: flex;

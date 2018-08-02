@@ -170,6 +170,7 @@ a, a:hover{
 	margin-top: 2vw;
 	display: flex;
 	flex-direction: column;
+
 	max-width: 20%;
 	height: 91%;
 	position: relative;
@@ -193,7 +194,6 @@ a, a:hover{
 	overflow: hidden;
 }
 .person .name{
-	border: 1px solid black;
 	font-family: raleway;
 	padding-top: 1.2vw;
     padding-bottom: .8em;

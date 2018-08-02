@@ -3,7 +3,7 @@ class Person{
 	 //biography should be a markdown text
 	 constructor(name, img_url, designation, bio){
 		 if(name === undefined){
-			 //throw some error
+			console.log("Error with Person object")
 		 }
 		 this.name = name;
 		 this.img_url = img_url;

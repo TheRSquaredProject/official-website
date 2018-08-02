@@ -5,14 +5,14 @@ html{
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: rgb(97, 127, 141); 
+    background: rgb(97, 127, 141);
 }
- 
+
 ::-webkit-scrollbar-thumb {
 	background: #37474F;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #90A4AE; 
+    background: #90A4AE;
 }
 /*navbar start */
 .nav-container{
@@ -61,7 +61,7 @@ html{
 	font-size: 0.8rem;
 	color: #ffcc00;
 	padding: 1em;
-	
+
 }
 .nav-links > .nav-item{
 	color: aliceblue;
