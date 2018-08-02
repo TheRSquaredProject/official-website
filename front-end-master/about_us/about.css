@@ -177,9 +177,10 @@ a, a:hover{
 	padding: .3vw 1vw .3vw;
 	transition: .2s;
 	cursor: pointer;
+	transition: all linear 0.2s;
 }
 .person:hover{
-	background: rgba(21,21,21,.1);
+	background: rgba(21,21,21,0.03);
 }
 .person .display-picture img{
 	margin-top: 1vw;
@@ -237,7 +238,7 @@ a, a:hover{
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	transition: .5s;
+	transition: .3s;
 }
 .pop-up .cross{
 	position: relative;
@@ -251,6 +252,7 @@ a, a:hover{
 	border-top-right-radius: .3vw;
 	cursor: pointer;
 	transition: .2s;
+	margin-left: 0px;
 }
 .pop-up .cross:hover{
 	background: rgba(21,21,21,.14);
@@ -264,7 +266,7 @@ a, a:hover{
 	width: 82%;
 	background: white;
 	border-radius: .3vw;
-	transition: .5s;
+	transition: .1s;
 }
 @keyframes fadeOut{
 	0%{
@@ -289,9 +291,10 @@ a, a:hover{
 	display: flex;
 }
 .profile-data > img{
-	box-shadow: .2vw .2vw .7vw #212121;
+	box-shadow: 0vw 0vw 5px #212121;
 	margin-left: 3vw;
 	width: 27vh;
+	border-radius: 3px;
 	align-self: flex-end;
 }
 
@@ -322,11 +325,14 @@ a, a:hover{
 	justify-content: flex-end;
 }
 .social-links img{
-	margin: .5vw;
-	width: 3.5vw;
+	margin: .7vw;
+	width: 3vw;
+	opacity: 0.9;
+	transition: all linear 0.1s;
 }
 .social-links img:hover{
 	transform: scale(1.05);
+	opacity: 1;
 }
 .social-links a{
 	align-self: center;
