@@ -31,6 +31,7 @@ a, a:hover{
 
 
 
+/*
 .land{
 	position: relative;
 	overflow: hidden;
@@ -96,6 +97,7 @@ a, a:hover{
 	color: #212121;
 	background: #F1F1F1;
 }
+*/
 
 /*************************  land page ends  ***********************************/
 
@@ -307,8 +309,8 @@ a, a:hover{
     border-radius: .5vw;
     overflow: hidden;
     position: relative;
-	width: 30%;
-	height: 500px; /** Card should have fixed widht and height**/
+	width: 35%;
+/*	height: 500px; * Card should have fixed widht and height**/
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
@@ -321,23 +323,28 @@ a, a:hover{
 }
 
 .featured-projects-container .content .project-card .project-img{
-    width: 100%;
+	align-self: center;
+	margin: 1vw;
+	margin-bottom: 0vw;
+	width: 95%;
 }
 
 .featured-projects-container .content .project-card .descriptor{
-    bottom: 0;
     background: rgba(245,245,245, .6);
+	position: relative;
 	padding: .3em;
-	height: 100%;
 	text-align: center;
-	
 }
 .featured-projects-container .content .project-card .descriptor .name{
+	padding: 1vw;
+	font-size: 2.5vw;
     font-family: 'patua one';
 }
-.featured-projects-container .content .project-card .descriptor .brief{
-    font-family: roboto;
-}
+/************* featured projects end ***************/
+
+
+
+
 
 .nav-links > .index-nav-item{
 	font-family: Roboto, sans-serif;
@@ -356,6 +363,7 @@ a, a:hover{
 */
 
 /*****************      form part      **************/
+/*
 
 
 .form-container{
@@ -440,6 +448,7 @@ a, a:hover{
 .form-content .btn:hover{
 	border: .12vw solid #212121;
 }
+*/
 
 
 
@@ -515,12 +524,15 @@ a, a:hover{
 	text-align: center;
 }
 
+
+
+/****************** cover pic ***********************/
 .cover-page{
 	height: 100vh;
 	width: 100vw;
 }
 .cover-picture{
-	height: 100vh;
+	height: 100%;
 	position: absolute;
 	top: 0px;
 	left: 0px;
