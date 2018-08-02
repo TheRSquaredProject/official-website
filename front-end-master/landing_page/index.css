@@ -58,15 +58,6 @@ a, a:hover{
 	position: absolute;
 	top: 37%;
 }
-.land-content .headline{
-	font-family: 'Raleway', cursive;
-	padding: 1.2vw;
-	font-size: 3.2vw;
-	font-weight: bold;
-}
-.land-content .headline::after{
-    display: none;
-}
 .details{
 	padding-bottom: 2vw;
 	font-size: 1.5vw;
@@ -185,26 +176,6 @@ a, a:hover{
     min-width: 100%;
     display: flex;
     justify-content: center;
-}
-.headline{
-    font-family: 'Raleway';
-    align-self: center;
-	color: #212121;
-	position: relative;
-	text-align: center;
-	padding: 1vw;
-    font-size: 2.5em;
-	margin: 0;
-	letter-spacing: 1px;
-}
-.headline::after{
-	content: '';
-    position: absolute;
-	background: #212121;
-	top: 100%;
-    left: 30%;
-	width: 40%;
-	height: 2px;
 }
 
 .what-we-do-content{
