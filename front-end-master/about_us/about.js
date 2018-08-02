@@ -116,9 +116,7 @@ function populatePop_Up(popUp, person, populate){
 		if(getPersonChildren('facebook')[0].textContent == ""){
 			facebook.classList.add('hide');
 		}else{
-			console.log("ne");
 			facebook.classList.remove('hide');
-			console.log(facebook.classList);
 			facebook.setAttribute('href', getPersonChildren('facebook')[0].textContent);
 		}
 
