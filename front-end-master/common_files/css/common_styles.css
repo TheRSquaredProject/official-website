@@ -1,0 +1,37 @@
+html{
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(97, 127, 141);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #37474F;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #90A4AE;
+}
+.headline{
+    font-family: 'Raleway';
+    align-self: center;
+	color: #212121;
+	position: relative;
+	text-align: center;
+	padding: 1vw;
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+	letter-spacing: 1px;
+}
+/* .headline::after{
+	content: '';
+    position: absolute;
+	background: #212121;
+	top: 100%;
+    left: 30%;
+	width: 40%;
+	height: 2px;
+} */

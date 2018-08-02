@@ -6,6 +6,7 @@
     font-size: 15px;
     font-weight: 700;
 	height: 40px;
+	line-height: 37px;
 	padding: 0px 20px 0px 20px;
 	letter-spacing: 1px;
     text-align: center;
@@ -24,5 +25,67 @@
 	background-color: #0D47A1;
 }
 .material-button:focus{
+	outline: none;
+}
+
+
+.material-button-white{
+    border: 0.08rem solid white;
+    border-radius: .4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+	height: 40px;
+	line-height: 37px;
+	padding: 0px 20px 0px 20px;
+	letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	white-space: nowrap;
+	background-color: transparent;
+	color: white;
+	transition: all linear 0.1s;
+}
+.material-button-white:hover{
+	color:teal;
+	background-color: white;
+}
+.material-button-white:active{
+	background-color: white;
+}
+.material-button-white:focus{
+	outline: none;
+}
+
+
+.material-button-purple{
+    border: 0.1rem solid #9b4dca;
+    border-radius: .4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+	height: 40px;
+	line-height: 37px;
+	padding: 0px 20px 0px 20px;
+	letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	white-space: nowrap;
+	background-color: transparent;
+	color: #8138af;
+	transition: all linear 0.1s;
+}
+.material-button-purple:hover{
+	color:white;
+	background-color: #9b4dca;
+}
+.material-button-purple:active{
+	background-color: #8138af;
+}
+.material-button-purple:focus{
 	outline: none;
 }

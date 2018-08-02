@@ -7,25 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../common_files/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../common_files/css/nav&foot.css">
-    <link rel="stylesheet" href="../common_files/css/button.css">
-	<link rel="stylesheet" href="../common_files/css/footer.css">
+	<link rel="stylesheet" href="./common_files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./common_files/css/nav&foot.css">
+    <link rel="stylesheet" href="./common_files/css/button.css">
+    <link rel="stylesheet" href="./common_files/css/footer.css">
+    <link rel="stylesheet" href="./common_files/css/common_styles.css">
 	<link rel="stylesheet" href="./index.css">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Patua+One|Roboto|Roboto+Condensed|Lato|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Patua+One|Roboto|Roboto+Condensed|Lato|Raleway|Montserrat|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
 
 	<!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="./common_files/js/parallax.min.js"></script>
 
     <!--custom js-->
 
-    <script src="../common_files/js/custom_js/headerHelpers.js" ></script>
+    <script src="./common_files/js/custom_js/headerHelpers.js" ></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122703977-1"></script>
-    <script src="../common_files/js/custom_js/googleAnalytics.js"></script>
+    <script src="./common_files/js/custom_js/googleAnalytics.js"></script>
 
 	<title>The R-Squared Project</title>
 </head>
@@ -34,28 +35,34 @@
 
 	<nav class="navbar nav-container">
 		<div class="nav-logo">
-			<a href="../landing_page/index.html" class="nav-logo">
-				<img src="../common_files/rsquared_logo.png" class="logo">
+			<a href="./index.html" class="nav-logo">
+				<img src="./common_files/rsquared_logo.png" class="logo">
 			</a>
 		</div>
 		<div class="nav-links">
-			<a href="../landing_page/index.html" class="index-nav-item">HOME</a>
-			<a href="../Projects/projects.html" class="index-nav-item">PROJECTS</a>
+			<a href="#page_top" class="index-nav-item  nav-item">HOME</a>
+			<a href="./Projects/projects.html" class="index-nav-item nav-item">PROJECTS</a>
 			<!--<a href="#" class="nav-item">Achievements</a>-->
-			<a href="../about_us/about.html" class="index-nav-item">ABOUT US</a>
-			<a href="#contact-us" class="index-nav-item">CONTACT US</a>
+			<a href="./about_us/about.html" class="index-nav-item nav-item">OUR TEAM</a>
+			<a href="#contact-us" class="index-nav-item nav-item">CONTACT US</a>
 		</div>
 	</nav>
-	<div class="container-fluid land">
-		<div class="land-content container col-8 offset-2">
-			<span class="land-text headline">Understanding Bangladesh through data</span>
-			<span class="land-text details col-12 offset-md-0">
-				Looking at various socio-economical issues of Bangladesh, through the lens of statistics and data-visualization.
-			</span>
-			<a href="../about_us/about.html" id="land-button"><button class="btn land-button btn-outline-light">More about us</button></a>
-		</div>
-		<img src="images/land-cover2.jpg" class="img-fluid land-cover-img">
-	</div>
+    <div class="cover-page" id="page_top">
+        <div class="cover-picture" data-parallax="scroll" data-image-src="images/cover.jpg"></div>
+        <div class="title-overlay"></div>
+        <img class="graph-lines" src="images/graph_lines.svg">
+        <div class="headline-text">
+            <h1>The R-স্কয়ার্ড Project</h1>
+            <h2>Understanding Bangladesh through data</h2>
+        </div>
+        <div class="action-buttons">
+            <a href="#projects" class="material-button-white">Our Works</a>
+            <a href="#contact-us" class="material-button-white">Volunteer</a>
+        </div>
+        <div class="social-buttons">
+            <a target="_blank" href="https://www.facebook.com/dhakastats/"><img src="./about_us/icons/facebook.svg"></a>
+        </div>
+    </div>
 
 	<div class="container-fluid about-us-container">
 		<div class="about-us-content">
@@ -109,19 +116,19 @@
 
 
     <div class="featured-projects-container">
-        <div class="headline-container">
+        <div class="headline-container" id="projects">
             <h1 class="headline">Our Projects</h1>
         </div>
         <div class="content">
-            <div class="project-card" onclick="window.location='../Projects/projects.html'">
-                <img src="../Projects/infographs/navid_et_al.jpg" class="project-img">
+            <div class="project-card" onclick="window.location='./Projects/projects.html#sexual_abuse'">
+                <img src="./Projects/infographs/navid_et_al.jpg" class="project-img">
                 <div class="descriptor">
                     <h2 class="name">Factors behind rape in Bangladesh</h2>
                     <p class="brief">Research done by Naved RT et al found that 1 in 10 men had committed sexual assault of females including non-partners in Bangladesh...</p>
                 </div>
             </div>
-            <div class="project-card" onclick="window.location='../Projects/projects.html'">
-                <img src="../Projects/infographs/infographic_on_rape.png" class="project-img">
+            <div class="project-card" onclick="window.location='./Projects/projects.html#reasons_behind_abuse'">
+                <img src="./Projects/infographs/infographic_on_rape.png" class="project-img">
                 <div class="descriptor">
                     <h2 class="name">Infographic on rape in Bangladesh</h2>
                     <p class="brief">As we approach the next decade, an important problem that Bangladesh faces is sexual violence (i.e: rape/ধর্ষণ) ... </p>
@@ -130,26 +137,23 @@
 
         </div>
         <div class="button-container">
-            <input type="button" class="material-button" value="See all Projects" onclick="window.location='../Projects/projects.html'">
+            <input type="button" class="material-button" value="See all Projects" onclick="window.location='./Projects/projects.html'">
         </div>
     </div>
-
-    <div class="associates-container">
+    <!-- <div class="associates-container">
         <div class="headline-container">
             <h1 class="headline">Our Associates</h1>
         </div>
 
         <div class="content">
             <div class="img-container">
-                <img src="images/wistem.gif">
+                <img src="images/wistem.png">
             </div>
             <div class="img-container">
                 <img src="images/bangladeshTomorrow.PNG">
             </div>
         </div>
-    </div>
-
-
+    </div> -->
     <form id="contact-us" class="container contact-card-container"  class="row" action="https://formspree.io/thersquaredproject@gmail.com" method="POST">
         <div class="col-sm">
             <div class="card">
@@ -179,7 +183,7 @@
                         </div>
                         <div class="form-row form-submit-row">
                             <div class="col-12">
-                                <input type="submit" class="submit-button" value="Submit">
+                                <input type="submit" class="material-button-purple" value="Submit">
                             </div>
                         </div>
                     </div>
@@ -190,6 +194,13 @@
     
     
     <br/><br/><br/><br/>
+    <div class="associates-box">
+        <span class="associates-title">OUR ASSOCIATES</span>
+        <div class="associates-logo-quilt">
+            <img src="images/wistem.png" class="associates-logo">
+            <img src="images/bdt-amplogo-v1.png" class="associates-logo">
+        </div>
+    </div>
 	<div class="footer">
 		<div class="copyright">
 			Copyright © 2018 The R-Squared Project
