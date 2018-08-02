@@ -37,6 +37,7 @@ html{
 	animation-duration: .4s;
 	animation-delay: 0s;
 	color: #ffcc00;
+	width: 100vw;
 }
 
 
@@ -106,7 +107,7 @@ html{
 		padding-right: 0;
 	}
 	.nav-links .nav-item{
-		/border: 1px solid white;
+		border: 1px solid white;
 		padding: .4em;
 	}
 }
