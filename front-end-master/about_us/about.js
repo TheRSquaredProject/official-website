@@ -72,7 +72,7 @@ function getChild(elem, className){
 	return childs;
 }
 
-function populatePop_Up(popUp, person){
+function populatePop_Up(popUp, person, populate){
 	let profile_data = getChild(popUp, 'profile-data')[0];
 		let img = profile_data.children[0];
 		let profile_info = getChild(profile_data, 'info')[0];
@@ -95,27 +95,53 @@ function populatePop_Up(popUp, person){
 				})
 		let main_bio = getChild(bio, 'main-bio')[0];
 
-	let getPersonChildren = person.getElementsByClassName('details')[0].getElementsByClassName.bind(person);
-	let img_link = person.getElementsByClassName('display-picture')[0].children[0].getAttribute('src');
-	img.setAttribute('src', img_link);
-	name.textContent = getPersonChildren('name')[0].children[0].textContent;
-	designation.textContent = getPersonChildren('designation')[0].textContent;
-	project_name.textContent = getPersonChildren('project-name')[0].textContent;
-	email.setAttribute('href', getPersonChildren('email')[0].textContent);
-	facebook.setAttribute('href', getPersonChildren('facebook')[0].textContent);
-	instagram.setAttribute('href', getPersonChildren('instagram')[0].textContent);
-	console.log(getPersonChildren('twitter')[0].textContent);
-	if(getPersonChildren('twitter')[0].textContent == ""){
+	if(populate){
+		let getPersonChildren = person.getElementsByClassName('details')[0].getElementsByClassName.bind(person);
+		let getInfoChildren = person.getElementsByClassName('details')[0].getElementsByClassName('info')[0].getElementsByClassName.bind(person);
+		let img_link = person.getElementsByClassName('display-picture')[0].children[0].getAttribute('src');
+		img.setAttribute('src', img_link);
+		name.textContent = getPersonChildren('name')[0].children[0].textContent;
+		designation.textContent = getPersonChildren('designation')[0].textContent;
+		project_name.textContent = getPersonChildren('project-name')[0].textContent;
+		email.setAttribute('href', getInfoChildren('email')[0].textContent);
+		facebook.setAttribute('href', getInfoChildren('facebook')[0].textContent);
+		instagram.setAttribute('href', getInfoChildren('instagram')[0].textContent);
+		if(getInfoChildren('twitter')[0].textContent == ""){
+			console.log("ye");
+			console.log(getInfoChildren('twitter')[0]);
+			getInfoChildren('twitter')[0].classList.add('hide');
+		}
+		twitter.setAttribute('href', getInfoChildren('twitter')[0].textContent);
+		line_title.forEach(function(elem, i){
+			elem.textContent = getPersonChildren('line')[i].getElementsByClassName('title')[0].textContent;
+		})
+		line_p.forEach(function(elem, i){
+			elem.textContent = getPersonChildren('line')[i].getElementsByClassName('data')[0].textContent;
+		})
+		main_bio.innerHTML = getPersonChildren('main-bio')[0].innerHTML;
+	}else{
+		let getPersonChildren = person.getElementsByClassName('details')[0].getElementsByClassName.bind(person);
+		let img_link = person.getElementsByClassName('display-picture')[0].children[0].getAttribute('src');
+		img.setAttribute('src', "");
+		name.textContent = "";
+		designation.textContent = "";
+		project_name.textContent = "";
+		email.setAttribute('href', "#");
+		facebook.setAttribute('href', "#");
+		instagram.setAttribute('href', "#");
+		console.log(getPersonChildren('twitter')[0].textContent);
+		if(getPersonChildren('twitter')[0].textContent == ""){
 
+		}
+		twitter.setAttribute('href', "#");
+		line_title.forEach(function(elem, i){
+			elem.textContent = "";
+		})
+		line_p.forEach(function(elem, i){
+			elem.textContent = "";
+		})
+		main_bio.innerHTML = "";
 	}
-	twitter.setAttribute('href', getPersonChildren('twitter')[0].textContent);
-	line_title.forEach(function(elem, i){
-		elem.textContent = getPersonChildren('line')[i].getElementsByClassName('title')[0].textContent;
-	})
-	line_p.forEach(function(elem, i){
-		elem.textContent = getPersonChildren('line')[i].getElementsByClassName('data')[0].textContent;
-	})
-	main_bio.innerHTML = getPersonChildren('main-bio')[0].innerHTML;
 }
 
 
@@ -126,16 +152,18 @@ $(document).ready(function(){
 		$('.div-selector-container').addClass('div'+(divIndex+1));
 		$('.division-container:first-child').addClass('divC'+(divIndex+1))
 	})
-
+	var currentPerson = "";
 	$(".person").click(function(){
 		$('.pop-up-container')[0].classList.add("pop-up-shown");
 		$('.pop-up-container')[0].classList.remove("pop-up-hidden");
-		populatePop_Up(document.getElementsByClassName('pop-up')[0], this);
+		populatePop_Up(document.getElementsByClassName('pop-up')[0], this, true);
+		currentPerson = this;
 	})
 
 	$(".cross").click(function(){
 		$('.pop-up-container')[0].classList.remove("pop-up-shown",
 			$('.pop-up-container')[0].classList.add("pop-up-hidden"));
+			populatePop_Up(document.getElementsByClassName('pop-up')[0], currentPerson, false);
 	})
 
 })
