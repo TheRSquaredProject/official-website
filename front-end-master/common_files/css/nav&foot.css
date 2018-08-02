@@ -61,7 +61,6 @@ html{
 	font-size: 0.8rem;
 	color: #ffcc00;
 	padding: 1em;
-
 }
 
 .nav-fixed .nav-item{
@@ -90,13 +89,25 @@ html{
 }
 
 @media only screen and (max-width: 600px) {
-	.nav-links .btn{
-		border-radius: .5vw;
-		font-size: 1.2vw;
-	}
 	.nav-container{
+		flex-direction: column;
 		padding-top: 3vw;
 		padding-bottom: 3vw;
+	}
+	.nav-logo{
+		padding-left: 0;
+		padding-bottom: 2vw;
+		align-self: center;
+	}
+	.nav-links{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-right: 0;
+	}
+	.nav-links .nav-item{
+		/border: 1px solid white;
+		padding: .4em;
 	}
 }
 

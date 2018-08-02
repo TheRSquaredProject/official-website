@@ -340,20 +340,20 @@ a, a:hover{
 }
 
 .nav-links > .index-nav-item{
-	font-family: Roboto, sans-serif;
-	letter-spacing: 2px;
-	font-size: 0.8rem;
+	/font-family: Roboto, sans-serif;
+	/letter-spacing: 2px;
+	/font-size: 0.8rem;
 	color: aliceblue;
-	padding: 1em;
+	/padding: .5em;
 }
-
+/*
 .nav-fixed .index-nav-item{
 	color: #ffcc00;
 	letter-spacing: 2px;
 	font-size: 0.8rem;
 	transition: color linear 1s;
 }
-
+*/
 
 /*****************      form part      **************/
 

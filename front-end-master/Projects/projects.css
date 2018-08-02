@@ -81,7 +81,7 @@ a, a:hover{
 
 @media only screen and (max-width: 600px) {
 	.projects-container{
-		top: 15vw;
+		top: 19vw;
 	}
 	.project .title{
 		font-size: 2.3vw;
