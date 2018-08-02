@@ -43,6 +43,9 @@ a, a:hover{
   background: #FFFFFF;
   border: 1px solid black;
 }
+.hide-visibility{
+	visibility: hidden;
+}
 .hide{
 	display: none;
 }
