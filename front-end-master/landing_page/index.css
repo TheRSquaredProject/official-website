@@ -291,14 +291,24 @@ a, a:hover{
     flex-direction: row;
     width: 90%;
     align-self: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .featured-projects-container .content .project-card{
     border-radius: .5vw;
     overflow: hidden;
     position: relative;
-    width: 30%;
+	width: 30%;
+	height: 500px; /** Card should have fixed widht and height**/
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	overflow-y: hidden;
+	background: rgba(245,245,245, .6);
+}
+
+.featured-projects-container .content .project-card:hover {
+	background-color: lightgrey;
 }
 
 .featured-projects-container .content .project-card .project-img{
@@ -306,11 +316,12 @@ a, a:hover{
 }
 
 .featured-projects-container .content .project-card .descriptor{
-    position: absolute;
     bottom: 0;
     background: rgba(245,245,245, .6);
-    padding: .3em;
-    text-align: center;
+	padding: .3em;
+	height: 100%;
+	text-align: center;
+	
 }
 .featured-projects-container .content .project-card .descriptor .name{
     font-family: 'patua one';
@@ -319,8 +330,20 @@ a, a:hover{
     font-family: roboto;
 }
 
+.nav-links > .index-nav-item{
+	font-family: Roboto, sans-serif;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	color: aliceblue;
+	padding: 1em;
+}
 
-
+.nav-fixed .index-nav-item{
+	color: #ffcc00;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	transition: color linear 1s;
+}
 
 
 /*****************      form part      **************/

@@ -63,21 +63,13 @@ html{
 	padding: 1em;
 
 }
-.nav-links > .nav-item{
-	color: aliceblue;
-	padding-right: 2em;
-}
+
 .nav-fixed .nav-item{
 	color: #ffcc00;
 	letter-spacing: 2px;
 	font-size: 0.8rem;
 	transition: color linear 1s;
 }
-.nav-fixed > .nav-links .btn{
-	color: #F57F17;
-}
-
-
 
 .footer{
 	position: relative;
