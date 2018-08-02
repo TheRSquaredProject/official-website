@@ -101,9 +101,11 @@ function populatePop_Up(popUp, person){
 	name.textContent = getPersonChildren('name')[0].children[0].textContent;
 	designation.textContent = getPersonChildren('designation')[0].textContent;
 	project_name.textContent = getPersonChildren('project-name')[0].textContent;
+	if()
 	email.setAttribute('href', getPersonChildren('email')[0].textContent);
 	facebook.setAttribute('href', getPersonChildren('facebook')[0].textContent);
 	instagram.setAttribute('href', getPersonChildren('instagram')[0].textContent);
+	console.log(getPersonChildren('twitter')[0].textContent);
 	twitter.setAttribute('href', getPersonChildren('twitter')[0].textContent);
 	line_title.forEach(function(elem, i){
 		elem.textContent = getPersonChildren('line')[i].getElementsByClassName('title')[0].textContent;
@@ -111,7 +113,7 @@ function populatePop_Up(popUp, person){
 	line_p.forEach(function(elem, i){
 		elem.textContent = getPersonChildren('line')[i].getElementsByClassName('data')[0].textContent;
 	})
-	main_bio.textContent = getPersonChildren('main-bio')[0].textContent;
+	main_bio.innerHTML = getPersonChildren('main-bio')[0].innerHTML;
 }
 
 $(document).ready(function(){
