@@ -47,12 +47,15 @@ a, a:hover{
 
 .description-container{
 	width: 90vw;
-	display: flex;
-	flex-direction: row;
+	/display: flex;
+	/flex-direction: row;
 	align-self: center;
-	justify-content: center;
+	/justify-content: center;
 }
 .infograph{
+	float: left;
+	margin-right: 2vw;
+	margin-bottom: .7vw;
 	width: 60%;
 	display: flex;
 	flex-direction: row;
@@ -62,13 +65,13 @@ a, a:hover{
 	width: 100%;
 	height: auto;
 }
-.description-container > .description{
+.description-container > p{
 	font-family: Roboto;
-	width: 30%;
-	padding-left: 3vw;
-	padding-top: 1vw;
 }
-.description-container > .description > h2{
+.description-container li{
+	list-style-type: none;
+}
+.description-container > h2{
 	font-family: Raleway;
 	font-weight: 600;
 }
