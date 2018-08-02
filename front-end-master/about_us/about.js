@@ -126,7 +126,7 @@ function populatePop_Up(popUp, person, populate){
 			email.classList.add('hide');
 		}else{
 			email.classList.remove('hide');
-			email.setAttribute('href', getPersonChildren('email')[0].textContent);
+			email.setAttribute('href', 'mailto:'+getPersonChildren('email')[0].textContent);
 		}
 
 		if(getPersonChildren('instagram')[0].textContent == ""){
