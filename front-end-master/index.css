@@ -27,68 +27,76 @@ a, a:hover{
 	background: #212121;
 }
 
-
-
-
-
-.land{
-	position: relative;
-	overflow: hidden;
+/****************** cover pic ***********************/
+.cover-page{
 	height: 100vh;
-	padding: 0;
+	width: 100vw;
 }
-.land-cover-img {
-      z-index: -1;
-      left: 50%;
-      position: absolute;
-      min-height: 100%;
-      min-width: 100%;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-}
-
-
-.land-content{
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	font-family: roboto;
+.cover-picture{
+	height: 100%;
 	position: absolute;
-	top: 37%;
+	top: 0px;
+	left: 0px;
 }
 .details{
 	padding-bottom: 2vw;
 	font-size: 1.5vw;
 }
-.land-content > .land-text{
+.action-buttons a{
+	margin-right: 20px;
+}
+.graph-lines{
+	position: absolute;
+	bottom: -8vh;
+	right: -10vw;
+	width: 100vw;
+	height: 100vh;
+}
+.social-buttons{
+	position: absolute;
+	right: 20px;
+	bottom: 10vh;
+	height: auto;
+	width: 50px;
+}
+.social-buttons a{
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
 	text-align: center;
-	color: aliceblue;
-	font-weight: bold;
 }
-.land-content #land-button{
-	align-self: center;
-}
-.land-content .land-button{
-	color:aliceblue;
-	font-family: 'Raleway', cursive;
-	margin-top: 1vw;
-	padding: 1vw;
-	padding-left: 1.8em;
-	padding-right: 1.8em;
-	font-size: 1.7vw;
-	transition: .3s;
-}
-.land-button a{
-	color: aliceblue;
-}
-.land-button:hover{
-	color: #212121;
-	background: #F1F1F1;
+.social-buttons a:hover{
+	transform: scale(1.05);
 }
 
-/*************************  land page ends  ***********************************/
+.associates-box{
+	min-height: 25vh;
+	height: 25vh;
+	width: 100vw;
+	background-color: #263238;
+	color:white;
+	text-align: center;
+	padding: 20px 50px;
+}
+.associates-title{
+	color: white;
+	font-family: 'Raleway';
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	opacity: 0.8;
+	display: block;
+}
+.associates-logo-quilt{
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	height: 100px;
+}
+.associates-logo{
+	max-height: 40px;
+	margin: 0px 30px;
+}
+/*************************  cover end  ***********************************/
 
 
 .about-us-container{
@@ -278,8 +286,7 @@ a, a:hover{
     border-radius: .5vw;
     overflow: hidden;
     position: relative;
-	width: 30%;
-	height: 500px; /** Card should have fixed widht and height**/
+	width: 35%;
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
@@ -292,23 +299,28 @@ a, a:hover{
 }
 
 .featured-projects-container .content .project-card .project-img{
-    width: 100%;
+	align-self: center;
+	margin: 1vw;
+	margin-bottom: 0vw;
+	width: 95%;
 }
 
 .featured-projects-container .content .project-card .descriptor{
-    bottom: 0;
     background: rgba(245,245,245, .6);
+	position: relative;
 	padding: .3em;
-	height: 100%;
 	text-align: center;
-	
 }
 .featured-projects-container .content .project-card .descriptor .name{
+	padding: 1vw;
+	font-size: 2.5vw;
     font-family: 'patua one';
 }
-.featured-projects-container .content .project-card .descriptor .brief{
-    font-family: roboto;
-}
+/************* featured projects end ***************/
+
+
+
+
 
 .nav-links > .index-nav-item{
 	font-family: Roboto, sans-serif;
@@ -317,17 +329,10 @@ a, a:hover{
 	color: aliceblue;
 	padding: 1em;
 }
-/*
-.nav-fixed .index-nav-item{
-	color: #ffcc00;
-	letter-spacing: 2px;
-	font-size: 0.8rem;
-	transition: color linear 1s;
-}
-*/
 
 /*****************      form part      **************/
 
+<<<<<<< HEAD
 
 .form-container{
 	background: #FEFEFE;
@@ -422,6 +427,8 @@ a, a:hover{
 	position: relative;
 	padding-bottom: 100px;
 }
+=======
+>>>>>>> d40d72c4cd2689a151c5bf5acaac1a56af28442f
 .contact-card-container{
 	max-width: 700px !important;
 }
@@ -429,7 +436,7 @@ a, a:hover{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .contact-heading{
-	margin-bottom:30px; 
+	margin-bottom:30px;
 }
 .contact-heading span:nth-of-type(1){
 	display: block;
