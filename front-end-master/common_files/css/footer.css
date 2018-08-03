@@ -1,6 +1,17 @@
 .footer{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+.copyright{
+	align-self: flex-end;
+	position: relative;
+	bottom: 0%;
 	width: 100%;
-	background: #212121;
-	color: aliceblue;
-	height: 15vw;
+	height: 40px;
+	background-color: #37474F;
+	color: #B0BEC5;
+	text-align: center;
+	line-height: 40px;
+	font-size: 0.8rem;
 }

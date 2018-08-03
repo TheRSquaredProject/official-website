@@ -27,77 +27,76 @@ a, a:hover{
 	background: #212121;
 }
 
-
-
-
-
-.land{
-	position: relative;
-	overflow: hidden;
+/****************** cover pic ***********************/
+.cover-page{
 	height: 100vh;
-	padding: 0;
+	width: 100vw;
 }
-.land-cover-img {
-      z-index: -1;
-      left: 50%;
-      position: absolute;
-      min-height: 100%;
-      min-width: 100%;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-}
-
-
-.land-content{
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	font-family: roboto;
+.cover-picture{
+	height: 100%;
 	position: absolute;
-	top: 37%;
-}
-.land-content .headline{
-	font-family: 'Raleway', cursive;
-	padding: 1.2vw;
-	font-size: 3.2vw;
-	font-weight: bold;
-}
-.land-content .headline::after{
-    display: none;
+	top: 0px;
+	left: 0px;
 }
 .details{
 	padding-bottom: 2vw;
 	font-size: 1.5vw;
 }
-.land-content > .land-text{
+.action-buttons a{
+	margin-right: 20px;
+}
+.graph-lines{
+	position: absolute;
+	bottom: -8vh;
+	right: -10vw;
+	width: 100vw;
+	height: 100vh;
+}
+.social-buttons{
+	position: absolute;
+	right: 20px;
+	bottom: 10vh;
+	height: auto;
+	width: 50px;
+}
+.social-buttons a{
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
 	text-align: center;
-	color: aliceblue;
-	font-weight: bold;
 }
-.land-content #land-button{
-	align-self: center;
-}
-.land-content .land-button{
-	color:aliceblue;
-	font-family: 'Raleway', cursive;
-	margin-top: 1vw;
-	padding: 1vw;
-	padding-left: 1.8em;
-	padding-right: 1.8em;
-	font-size: 1.7vw;
-	transition: .3s;
-}
-.land-button a{
-	color: aliceblue;
-}
-.land-button:hover{
-	color: #212121;
-	background: #F1F1F1;
+.social-buttons a:hover{
+	transform: scale(1.05);
 }
 
-/*************************  land page ends  ***********************************/
+.associates-box{
+	min-height: 25vh;
+	height: 25vh;
+	width: 100vw;
+	background-color: #263238;
+	color:white;
+	text-align: center;
+	padding: 20px 50px;
+}
+.associates-title{
+	color: white;
+	font-family: 'Raleway';
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	opacity: 0.8;
+	display: block;
+}
+.associates-logo-quilt{
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	height: 100px;
+}
+.associates-logo{
+	max-height: 40px;
+	margin: 0px 30px;
+}
+/*************************  cover end  ***********************************/
 
 
 .about-us-container{
@@ -178,34 +177,13 @@ a, a:hover{
 	position: relative;
     justify-content: center;
 	flex-direction: column;
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 .headline-container{
 	position: relative;
     min-width: 100%;
     display: flex;
     justify-content: center;
-}
-.headline{
-    font-family: 'Patua One', cursive;
-    align-self: center;
-	color: #212121;
-	position: relative;
-	text-align: center;
-	padding: 1vw;
-    font-size: 2.5em;
-	margin: 0;
-	letter-spacing: 1px;
-}
-.headline::after{
-	content: '';
-    position: absolute;
-	background: #212121;
-	top: 100%;
-    left: 0;
-	width: 100%;
-	height: .1em;
-	border-radius: 7em;
 }
 
 .what-we-do-content{
@@ -219,7 +197,6 @@ a, a:hover{
 	width: 15vw;
 	padding: 3vw;
 	padding-bottom: 0;
-	padding-top: 9vh;
 	margin: 0;
 }
 
@@ -265,10 +242,19 @@ a, a:hover{
     justify-content: center;
 }
 .associates-container .img-container{
-    margin: 3vw;
+	margin: 3vw;
+	width: 10vw;
+	position: relative;
+}
+.associates-container .img-container:nth-child(1){
+	width: 15vw;
 }
 .associates-container .img-container img{
-    width: 10vw;
+	background: black;
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+    width: 100%;
     height: auto;
 }
 
@@ -282,7 +268,9 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 5vw;
+	padding-bottom: 5vw;
+	background: #FEFEFE;
+	position: relative;
 }
 
 .featured-projects-container .content{
@@ -298,8 +286,7 @@ a, a:hover{
     border-radius: .5vw;
     overflow: hidden;
     position: relative;
-	width: 30%;
-	height: 500px; /** Card should have fixed widht and height**/
+	width: 35%;
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
@@ -312,23 +299,28 @@ a, a:hover{
 }
 
 .featured-projects-container .content .project-card .project-img{
-    width: 100%;
+	align-self: center;
+	margin: 1vw;
+	margin-bottom: 0vw;
+	width: 95%;
 }
 
 .featured-projects-container .content .project-card .descriptor{
-    bottom: 0;
     background: rgba(245,245,245, .6);
+	position: relative;
 	padding: .3em;
-	height: 100%;
 	text-align: center;
-	
 }
 .featured-projects-container .content .project-card .descriptor .name{
+	padding: 1vw;
+	font-size: 2.5vw;
     font-family: 'patua one';
 }
-.featured-projects-container .content .project-card .descriptor .brief{
-    font-family: roboto;
-}
+/************* featured projects end ***************/
+
+
+
+
 
 .nav-links > .index-nav-item{
 	font-family: Roboto, sans-serif;
@@ -338,103 +330,13 @@ a, a:hover{
 	padding: 1em;
 }
 
-.nav-fixed .index-nav-item{
-	color: #ffcc00;
-	letter-spacing: 2px;
-	font-size: 0.8rem;
-	transition: color linear 1s;
-}
-
-
 /*****************      form part      **************/
-
-
-.form-container{
-	background: #FEFEFE;
-	display: flex;
+.contact-box{
 	width: 100vw;
-	justify-content: center;
+	position: relative;
+	background-color: #FEFEFE;
+	padding-bottom: 100px;
 }
-.wrapper{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-self: center;
-}
-.form-content{
-	padding: 4vw 4vw 4vw 5vw;
-	flex-grow: 1;
-	height: 100%;
-	font-family: roboto;
-}
-.form-content input{
-	border: .05vw solid #212121;
-	margin-top: 1.5vw;
-	width: 100%;
-	padding: .8vw;
-	background: #F7F7F7;
-}
-.form-control:focus {
-	background: #FFFFFF;
-  border-color: #454545;
-  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075), 0 0 0px rgba(255, 0, 0, 0.6);
-}
-.form-content input::placeholder{
-	color: #212121;
-}
-.form-headline-container{
-	font-family: lato;
-}
-.form-headline{
-	font-weight: bold;
-}
-.form-headline-sub{
-	font-weight: 500;
-}
-.form-body{
-	margin-top: 1vw;
-}
-.form-name-container{
-	display: flex;
-	justify-content: space-between;
-}
-.form-name-container > input{
-	width: 49%;
-}
-.form-mail-container > input{
-	width: 70%;
-}
-.form-message-container > textarea{
-	padding: .8vw;
-	color: #212121;
-	font-family: roboto;
-	margin-top: 1.5vw;
-	background: #F7F7F7;
-	width: 100%;
-	height: 15vw;
-	border: .05vw solid #212121;
-}
-.form-message-container > textarea::placeholder{
-	color: #212121;
-}
-.form-content .btn{
-	margin-top: 1vw;
-	padding: .9vw 2.6vw .9vw;
-	background: #F7F7F7;
-	border: .08vw solid #212121;
-	color: #424242;
-	font-family: roboto;
-	font-size: 1.1em;
-	transition: .4s;
-	font-weight: 600;
-}
-.form-content .btn:hover{
-	border: .12vw solid #212121;
-}
-
-
-
-/*------------------------------*/
 .contact-card-container{
 	max-width: 700px !important;
 }
@@ -442,7 +344,7 @@ a, a:hover{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .contact-heading{
-	margin-bottom:30px; 
+	margin-bottom:30px;
 }
 .contact-heading span:nth-of-type(1){
 	display: block;
@@ -461,35 +363,6 @@ a, a:hover{
 }
 .form-row{
 	margin-bottom: 10px;
-}
-
-.submit-button{
-    border: 0.1rem solid #9b4dca;
-    border-radius: .4rem;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-	height: 40px;
-	padding: 0px 20px 0px 20px;
-	letter-spacing: 1px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-	white-space: nowrap;
-	background-color: transparent;
-	color: #8138af;
-	transition: all linear 0.1s;
-}
-.submit-button:hover{
-	color:white;
-	background-color: #9b4dca;
-}
-.submit-button:active{
-	background-color: #8138af;
-}
-.submit-button:focus{
-	outline: none;
 }
 .join-team{
 	display: none;
@@ -529,26 +402,116 @@ a, a:hover{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-
-.footer{
-	position: relative;
-	display: flex;
-	flex-direction: row;
-}
-.copyright{
-	align-self: flex-end;
-	position: relative;
-	bottom: 0%;
-	width: 100%;
-	height: 40px;
-	background-color: #37474F;
-	color: #B0BEC5;
-	text-align: center;
-	line-height: 40px;
-	font-size: 0.8rem;
-}
 .button-container{
 	margin-top: 50px;
 	width: 100%;
 	text-align: center;
+}
+
+.cover-page{
+	height: 100vh;
+	width: 100vw;
+}
+.cover-picture{
+	z-index: 0;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.title-overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+    margin-left:-40vw;
+	transform: skew(20deg);
+	background: #000;
+	opacity: 0.5;
+}
+.headline-text{
+	position: relative;
+	top: 48%;
+	transform: translateY(-50%);
+	margin-left: 6.5vw;
+	padding-left: 2vw;
+	border-left: 10px solid #ffcc00;
+}
+
+.headline-text h1{
+	font-family: Montserrat;
+	font-weight: bolder;
+	color: white;
+	font-size: 3.5em;
+}
+.headline-text h2{
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: white;
+	font-size: 1.4em;
+	letter-spacing: 1.5px;
+	margin-top: 10px;
+}
+.action-buttons{
+	position: relative;
+	top: 48%;
+	transform: translateY(-50%);
+	margin-left: 8.5vw;
+}
+.action-buttons a{
+	margin-right: 20px;
+}
+.graph-lines{
+	position: absolute;
+	bottom: -8vh;
+	right: -10vw;
+	width: 100vw;
+	height: 100vh;
+}
+.social-buttons{
+	position: absolute;
+	right: 20px;
+	bottom: 10vh;
+	height: auto;
+	width: 50px;
+}
+.social-buttons a{
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.social-buttons a:hover{
+	transform: scale(1.05);
+}
+
+.associates-box{
+	min-height: 25vh;
+	height: 25vh;
+	width: 100vw;
+	background-color: #263238;
+	color:white;
+	text-align: center;
+	padding: 20px 50px;
+	position: relative;
+}
+.associates-title{
+	color: white;
+	font-family: 'Raleway';
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	opacity: 0.8;
+	display: block;
+}
+.associates-logo-quilt{
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
+	min-height: 100px;
+}
+.associates-logo{
+	max-height: 40px;
+	margin: 10px 30px;
 }
