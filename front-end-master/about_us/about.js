@@ -1,47 +1,3 @@
-
-class Person{
-	 //biography should be a markdown text
-	 constructor(name, img_url, designation, bio){
-		 if(name === undefined){
-			console.log("Error with Person object")
-		 }
-		 this.name = name;
-		 this.img_url = img_url;
-		 this.desgination = designation;
-		 this.bio = bio;
-		 this.DOMnode = document.createElement('div');
-		 this.DOMnode.className += "person";
-
-		 let containerElem;
-		 containerElem = document.createElement('div');
-		 containerElem.className += "name";  //name element
-		 let nameElem = document.createElement('span');
-		 	nameElem.value = this.name;
-		 containerElem.appendChild(document.createElement('span'));
-		 this.DOMnode.appendChild(containerElem);
-
-		 containerElem = document.createElement('div');
-		 containerElem.className += "display_picture";
-		 let imgElem = document.createElement('img');
-		 	 imgElem.setAttribute('src', img_url);
-		 containerElem.appendChild(imgElem);
-		 this.DOMnode.appendChild(containerElem);
-
-		 containerElem = document.createElement('div');
-		 containerElem.className += "designation";
-		 let designationEleme = document.createElement('div');
-		 	 designationEleme.value = designation;
-		 containerElem.appendChild(designationEleme);
-		 this.DOMnode.appendChild(containerElem);
-
-		 let bioElem = document.createElement('p');
-		 	 bioElem.classList.add('hidden');
-		 	 bioElem.value = bio;
-		 this.DOMnode.appendChild(bioElem);
-     }
-}
-
-
 function divSelectorClassRemover(hoveredDivIndex, divIndexToRemove=4){
 	if(divIndexToRemove > hoveredDivIndex){
 		$('.div-selector-container').removeClass('div'+(divIndexToRemove+1));
@@ -116,9 +72,7 @@ function populatePop_Up(popUp, person, populate){
 		if(getPersonChildren('facebook')[0].textContent == ""){
 			facebook.classList.add('hide');
 		}else{
-			console.log("ne");
 			facebook.classList.remove('hide');
-			console.log(facebook.classList);
 			facebook.setAttribute('href', getPersonChildren('facebook')[0].textContent);
 		}
 
@@ -172,9 +126,8 @@ $(document).ready(function(){
 		//$('.div-selector-container').addClass('div'+(divIndex+1));
 		$('.div-name').removeClass('position-selected');
 		$(this).addClass('position-selected');
-		$('.division-container:first-child').addClass('divC'+(divIndex+1))
+		$('.division-container:first-child').addClass('divC'+(divIndex+1));
 	});
-	
 	var currentPerson = "";
 	$(".person").click(function(){
 		$('.pop-up-container')[0].classList.add("pop-up-shown");
@@ -188,5 +141,4 @@ $(document).ready(function(){
 			$('.pop-up-container')[0].classList.add("pop-up-hidden"));
 			populatePop_Up(document.getElementsByClassName('pop-up')[0], currentPerson, false);
 	});
-
 })
