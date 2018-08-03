@@ -490,20 +490,12 @@ a, a:hover{
 	width: 100vw;
 }
 .cover-picture{
+	z-index: 0;
 	height: 100vh;
-	position: absolute;
+	width: 100vw;
+	position: fixed;
 	top: 0px;
 	left: 0px;
-}
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-.parallax-slider{
-	left:0px !important;	
-}
-.parallax-mirror{
-	overflow: visible !important;
 }
 .title-overlay{
 	position: absolute;
