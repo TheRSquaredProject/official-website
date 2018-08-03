@@ -135,9 +135,9 @@ a, a:hover{
 	opacity: 1;
 }
 .position-selected{
-	border-bottom:1.5px solid #3F51B5 !important;
+	border-bottom:1.5px solid #212121 !important;
 	font-weight: 500 !important;
-	color:#1A237E;
+	color:#212121;
 	opacity: 1 !important;
 }
 .divisions-container{
