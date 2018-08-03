@@ -72,13 +72,7 @@ function populatePop_Up(popUp, person, populate){
 		if(getPersonChildren('facebook')[0].textContent == ""){
 			facebook.classList.add('hide');
 		}else{
-<<<<<<< HEAD
 			facebook.classList.remove('hide');
-=======
-			console.log("ne");
-			facebook.classList.remove('hide');
-			console.log(facebook.classList);
->>>>>>> front-end/Final-Hosted
 			facebook.setAttribute('href', getPersonChildren('facebook')[0].textContent);
 		}
 
@@ -126,24 +120,25 @@ function populatePop_Up(popUp, person, populate){
 
 
 $(document).ready(function(){
-	$('.div-name').hover(function(){
+	$('.div-name').click(function(){
 		let divIndex = $('.div-name').index(this);
 		divSelectorClassRemover(divIndex);
-		$('.div-selector-container').addClass('div'+(divIndex+1));
-		$('.division-container:first-child').addClass('divC'+(divIndex+1))
-	})
+		//$('.div-selector-container').addClass('div'+(divIndex+1));
+		$('.div-name').removeClass('position-selected');
+		$(this).addClass('position-selected');
+		$('.division-container:first-child').addClass('divC'+(divIndex+1));
+	});
 	var currentPerson = "";
 	$(".person").click(function(){
 		$('.pop-up-container')[0].classList.add("pop-up-shown");
 		$('.pop-up-container')[0].classList.remove("pop-up-hidden");
 		populatePop_Up(document.getElementsByClassName('pop-up')[0], this, true);
 		currentPerson = this;
-	})
+	});
 
 	$(".cross").click(function(){
 		$('.pop-up-container')[0].classList.remove("pop-up-shown",
 			$('.pop-up-container')[0].classList.add("pop-up-hidden"));
 			populatePop_Up(document.getElementsByClassName('pop-up')[0], currentPerson, false);
-	})
-
+	});
 })
