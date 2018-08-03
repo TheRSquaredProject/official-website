@@ -585,9 +585,9 @@ a, a:hover{
 	position: relative;
 	top: 55%;
 	transform: translateY(-50%);
-	height: 100px;
+	min-height: 100px;
 }
 .associates-logo{
 	max-height: 40px;
-	margin: 0px 30px;
+	margin: 10px 30px;
 }
