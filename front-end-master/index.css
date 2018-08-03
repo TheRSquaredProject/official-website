@@ -197,7 +197,6 @@ a, a:hover{
 	width: 15vw;
 	padding: 3vw;
 	padding-bottom: 0;
-	padding-top: 9vh;
 	margin: 0;
 }
 
@@ -418,9 +417,9 @@ a, a:hover{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 70%;
+	width: 100%;
 	height: 100%;
-    margin-left:-10vw;
+    margin-left:-40vw;
 	transform: skew(20deg);
 	background: #000;
 	opacity: 0.5;
@@ -502,9 +501,9 @@ a, a:hover{
 	position: relative;
 	top: 55%;
 	transform: translateY(-50%);
-	height: 100px;
+	min-height: 100px;
 }
 .associates-logo{
 	max-height: 40px;
-	margin: 0px 30px;
+	margin: 10px 30px;
 }
