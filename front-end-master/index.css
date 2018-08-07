@@ -277,7 +277,7 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-	padding-bottom: 15vh;
+	padding-bottom: 50px;
 	background: #FEFEFE;
 	position: relative;
 }
