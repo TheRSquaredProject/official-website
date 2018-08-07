@@ -224,7 +224,8 @@ a, a:hover{
 	top: 0;
 	right: 0;
 	width: 4em;
-	padding: 1em;
+	padding: 1.25em;
+	opacity: 0.5;
 	background: white;
 	border-top-right-radius: .3vw;
 	cursor: pointer;
@@ -233,6 +234,7 @@ a, a:hover{
 }
 .pop-up .cross:hover{
 	background: rgba(21,21,21,.14);
+	opacity: 1;
 }
 .pop-up{
 	display: flex;
@@ -276,7 +278,7 @@ a, a:hover{
 }
 
 .profile-data .info{
-	font-family: Raleway;
+	font-family: Roboto;
 	margin-top: 1em;
 	margin-left: 1.8em;
 	display: flex;

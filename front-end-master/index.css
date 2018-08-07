@@ -109,6 +109,7 @@ a, a:hover{
 	justify-content: center;
 	overflow-y: hidden;
 	padding: 0 7vw;
+	box-shadow: 0px -0.5px 40px 0px rgba(0, 0, 0,0.5);
 }
 .about-us-content{
 	position: relative;
@@ -268,22 +269,22 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-	padding-bottom: 5vw;
+	padding-bottom: 15vh;
 	background: #FEFEFE;
 	position: relative;
 }
 
 .featured-projects-container .content{
-    margin-top: 4vw;
+    margin-top: 2vw;
     display: flex;
     flex-direction: row;
     width: 90%;
     align-self: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .featured-projects-container .content .project-card{
-    border-radius: .5vw;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
 	width: 35%;
@@ -291,14 +292,16 @@ a, a:hover{
 	flex-direction: column;
 	cursor: pointer;
 	overflow-y: hidden;
-	background: rgba(245,245,245, .6);
+	margin: 0px 2vw;
+	background: rgb(247, 247, 247);
 }
 
 .featured-projects-container .content .project-card:hover {
-	background-color: lightgrey;
+	background-color: rgb(233, 233, 233);
 }
 
 .featured-projects-container .content .project-card .project-img{
+	border-radius: 3px;
 	align-self: center;
 	margin: 1vw;
 	margin-bottom: 0vw;
@@ -306,15 +309,17 @@ a, a:hover{
 }
 
 .featured-projects-container .content .project-card .descriptor{
-    background: rgba(245,245,245, .6);
+	margin-top: auto;
 	position: relative;
 	padding: .3em;
 	text-align: center;
 }
 .featured-projects-container .content .project-card .descriptor .name{
 	padding: 1vw;
-	font-size: 2.5vw;
-    font-family: 'patua one';
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	font-family: 'Roboto';
+	font-weight: bold;
 }
 /************* featured projects end ***************/
 
@@ -338,7 +343,7 @@ a, a:hover{
 	padding-bottom: 100px;
 }
 .contact-card-container{
-	max-width: 700px !important;
+	max-width: 800px !important;
 }
 .card{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -356,7 +361,7 @@ a, a:hover{
 }
 .contact-heading span:nth-of-type(2){
 	display: block;
-	font-family: 'Raleway';
+	font-family: 'Roboto';
 	font-size: 1.1rem;
 	letter-spacing: 1px;
 	color:#37474F;
@@ -401,6 +406,15 @@ a, a:hover{
 .form-submit-row{
 	margin-top: 10px;
 	margin-bottom: 20px;
+	padding: 5px;
+	line-height: 50px;
+	height: 50px;
+	display: block;
+}
+.form-submit-row a{
+	float: right;
+	font-weight: bold;
+	font-size: 1em;
 }
 .button-container{
 	margin-top: 50px;
@@ -426,10 +440,10 @@ a, a:hover{
 	left: 0px;
 	width: 100%;
 	height: 100%;
-    margin-left:-40vw;
-	transform: skew(20deg);
 	background: #000;
 	opacity: 0.5;
+	-webkit-clip-path: polygon(0 0, 39% 0, 74% 100%, 0 100%);
+	clip-path: polygon(0 0, 45% 0, 70% 100%, 0 100%);
 }
 .headline-text{
 	position: relative;
@@ -438,10 +452,11 @@ a, a:hover{
 	margin-left: 6.5vw;
 	padding-left: 2vw;
 	border-left: 10px solid #ffcc00;
+	z-index: 99;
 }
 
 .headline-text h1{
-	font-family: Montserrat;
+	font-family: 'Raleway';
 	font-weight: bolder;
 	color: white;
 	font-size: 3.5em;
@@ -450,7 +465,7 @@ a, a:hover{
 	font-family: 'Roboto';
 	font-weight: 300;
 	color: white;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	letter-spacing: 1.5px;
 	margin-top: 10px;
 }
@@ -459,12 +474,14 @@ a, a:hover{
 	top: 48%;
 	transform: translateY(-50%);
 	margin-left: 8.5vw;
+	z-index: 99;
 }
 .action-buttons a{
 	margin-right: 20px;
 }
 .graph-lines{
 	position: absolute;
+	z-index: 2;
 	bottom: -8vh;
 	right: -10vw;
 	width: 100vw;
