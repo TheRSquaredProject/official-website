@@ -347,7 +347,7 @@ a, a:hover{
 .contact-box{
 	width: 100vw;
 	position: relative;
-	padding: 80px 0px;
+	padding: 50px 0px 80px 0px;
 	background: linear-gradient(#FEFEFE, #E8EAF6);
 }
 .contact-card-container{
