@@ -22,6 +22,7 @@
 	animation-delay: 0s;
 	color: #ffcc00;
 	width: 100vw;
+	z-index: 100;
 }
 
 
