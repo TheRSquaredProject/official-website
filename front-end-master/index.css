@@ -145,9 +145,6 @@ a, a:hover{
 	padding-left: 2vw;
 	font-size: 3em;
 }
-.text-container .headline::after{
-    display: none;
-}
 .text-container-content{
 	font-size: 1.1em;
 	line-height: 1.7em;
