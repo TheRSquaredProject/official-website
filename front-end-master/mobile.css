@@ -9,15 +9,28 @@
 .land{
     height: 50%;
 }
-
 .about-us-container{
+    padding-left: 2vw;
+    padding-right: 2vw;
     height: auto;
 }
-
 .about-us-content{
+    flex-direction: column-reverse;
     margin-top: 6vw;
 }
-
+.about-us-container .image-container{
+    margin: 2vw;
+    margin-bottom: 8vw;
+    align-self: center;
+    width: 50%;
+}
+.text-container{
+   align-self: center;
+    width: 100%;
+}
+.text-container-content{
+    padding-right: 0;
+}
 
 
 .what-we-do-container{
