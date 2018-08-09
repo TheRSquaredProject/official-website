@@ -55,7 +55,7 @@
     font-size: 1em;
 }
 .headline{
-    font-size: 1.5em;
+    font-size: 9vw;
 }
 
 
@@ -68,7 +68,6 @@
 
 
 .what-we-do-content .what-we-do-card{
-    /border: 1px solid black;
     align-self: center;
     height: auto;
     font-size: .7em;
@@ -83,9 +82,8 @@
 }
 
 .what-we-do-content .card-img-top{
-    /border: 1px solid black;
     align-self: center;
-	/height: 20vw;
+	height: 20vw;
 	padding: 3vw;
 	padding-bottom: 0;
 	padding-top: 2vw;
@@ -94,7 +92,6 @@
 }
 
 .what-we-do-content .card-body{
-    /border: 1px solid black;
 	width: 90%;
 	align-self: center;
     height: auto;
@@ -128,7 +125,7 @@
 .featured-projects-container .content .project-card .descriptor{
     position: absolute;
     bottom: 0;
-    /padding: .3em;
+    padding: .3em;
     padding-bottom: 0em;
 }
 .featured-projects-container .content .project-card .descriptor .name{
@@ -226,4 +223,55 @@
 	color: #424242;
 	font-family: roboto;
 	font-size: 1.1em;
-	transition:
+}
+
+
+
+/***********shanzid***********/
+.cover-picture{
+	width: auto;
+	left:-40%;
+}
+.title-overlay{
+	width: 100%;
+	background: none;
+	background-color: rgba(0,0,0,0.3);
+}
+.graph-lines{
+	display: none;
+}
+.headline-text{
+	border-left: 0px;
+	width:90%;
+	top:45%;
+	margin: 0px auto;
+	text-align: center;
+}
+.headline-text h1{
+	font-size:13vw;
+}
+.headline-text h2{
+	font-size:5vw;
+	margin: 20px 0px 0px 0px;
+}
+.headline-text h2 span{
+	display: block;
+}
+.action-buttons{
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+	margin: 0px;
+}
+.action-buttons a{
+	margin: 0px 10px;
+}
+.contact-card-container{
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+.nav-links > .index-nav-item{
+	padding:0.4em;
+}
