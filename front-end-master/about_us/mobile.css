@@ -13,12 +13,7 @@
 	cursor: default;
 	max-width: 100%;
 	position: relative;
-	padding: .3vw 4% ;
-	margin: 0px 1%;
-	transition: .2s;
-	cursor: pointer;
-	transition: all linear 0.2s;
-	border-radius: 5px;
+	margin: 10px 0px;
 }
 .person .display-picture{
 	position: relative;
@@ -29,8 +24,9 @@
 }
 .person .content{
 	margin-top: 0;
-	padding-left: 2vw;
+	padding-left: 20px;
 	margin-left: 0;
+	text-align: left;
 }
 .person .name{
 	font-family: Roboto;
@@ -39,7 +35,7 @@
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	text-align: left;
 
 }
 .person .bio{
@@ -49,7 +45,7 @@
 }
 .person .bio p{
 	font-size: .8em;
-	text-align: center;
+	text-align: left;
 	word-break: normal;
 }
 .person .bio span{
