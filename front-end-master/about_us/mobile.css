@@ -1,0 +1,62 @@
+.div-selector-container > .div-name{
+	font-size: .7em;
+	padding: 0.5em .2em;
+	margin: 0px 2px;
+	white-space: nowrap;
+}
+.division-container .content-container{
+	flex-direction: column;
+}
+.person{
+	display: flex;
+	align-self: center;
+	cursor: default;
+	max-width: 100%;
+	position: relative;
+	padding: .3vw 4% ;
+	margin: 0px 1%;
+	transition: .2s;
+	cursor: pointer;
+	transition: all linear 0.2s;
+	border-radius: 5px;
+}
+.person .display-picture{
+	position: relative;
+	max-width: 30%;
+}
+.person .display-picture img{
+	width: 100%;
+}
+.person .content{
+	margin-top: 0;
+	padding-left: 2vw;
+	margin-left: 0;
+}
+.person .name{
+	font-family: Roboto;
+	font-size: 1.2em;
+	display: block;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+.person .bio{
+	margin-top: 5px;
+	width: 100%;
+	flex-grow: 1;
+}
+.person .bio p{
+	font-size: .8em;
+	text-align: center;
+	word-break: normal;
+}
+.person .bio span{
+	cursor: pointer;
+	color: deepskyblue;
+}
+.person .bio span:hover{
+	text-decoration: underline;
+	text-shadow: 0px 0px .01px deepskyblue;
+}
