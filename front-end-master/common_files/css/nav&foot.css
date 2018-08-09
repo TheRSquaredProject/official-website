@@ -60,8 +60,10 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
+	background-color: #263238;
 }
 .copyright{
+	margin-top: 2em;
 	align-self: flex-end;
 	position: relative;
 	bottom: 0%;
@@ -92,7 +94,6 @@
 		padding-right: 0;
 	}
 	.nav-links .nav-item{
-		border: 1px solid white;
 		padding: .4em;
 	}
 }
