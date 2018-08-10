@@ -11,7 +11,8 @@
 }
 .about-us-container{
     padding-left: 2vw;
-    padding-right: 2vw;
+	padding-right: 2vw;
+	padding-top: 0px;
     height: auto;
 }
 .about-us-content{
@@ -23,28 +24,29 @@
 }
 .text-container > .headline-container{
 	display: flex;
-	margin-bottom: 4vw;
 	flex-direction: column;
 }
 .text-container > .headline-container::before{
 	content: '';
 	position: absolute;
 	background: #212121;
-	width: 50%;
-	height: .4vw;
+	width: 20%;
+	height: .7vw;
 	align-self: center;
 	top: 100%;
+	display: none;
 }
 .text-container .headline{
-	font-size: 4em;
+	font-size: 9vw;
+	padding: 1vw;
 }
 .text-container{
     align-self: center;
     min-width: 90%;
 }
 .text-container-content{
-	font-size: 1.5em;
-    padding-right: 0;
+	font-size: 2em;
+	padding-right: 0;
 }
 
 
