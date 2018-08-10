@@ -10,4 +10,3 @@ after_success:
 branches:
   only:
     - release
-    - master
