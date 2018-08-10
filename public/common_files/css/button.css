@@ -14,7 +14,7 @@
     text-transform: uppercase;
 	white-space: nowrap;
 	background-color: transparent;
-	color: #0D47A1;
+	color: #1976D2;
 	transition: all linear 0.1s;
 }
 .material-button:hover{
@@ -105,7 +105,7 @@
     text-transform: uppercase;
 	white-space: nowrap;
 	background-color: transparent;
-	color: #8138af;
+	color: #9b4dca;
 	transition: all linear 0.1s;
 }
 .material-button-purple:hover{
