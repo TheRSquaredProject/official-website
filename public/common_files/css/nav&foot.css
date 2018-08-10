@@ -83,9 +83,9 @@
 	}
 	.nav-logo{
 		padding-left: 0;
-		padding-bottom: 2vw;
 		align-self: center;
-		width: 40%;
+		margin-bottom: 15px; 
+		width: 50%;
 	}
 	.nav-links{
 		display: flex;
@@ -96,6 +96,7 @@
 	.nav-links .nav-item{
 		padding: .6em 2vw;
 		letter-spacing: 1px;
+		font-size: 0.7em;
 	}
 }
 
