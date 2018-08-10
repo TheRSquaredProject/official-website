@@ -13,19 +13,19 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://rsquaredproject.org/index.html</loc>
-  <lastmod>2018-08-02T21:05:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://rsquaredproject.org/workflow/workflow.html</loc>
+  <lastmod>2018-08-10T21:05:45+00:00</lastmod>
+  <priority>0.30</priority>
 </url>
 <url>
   <loc>https://rsquaredproject.org/Projects/projects.html</loc>
-  <lastmod>2018-08-02T21:25:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2018-08-10T21:25:08+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://rsquaredproject.org/about_us/about.html</loc>
-  <lastmod>2018-08-02T21:25:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2018-08-10T21:25:07+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 
 

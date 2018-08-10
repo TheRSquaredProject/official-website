@@ -71,10 +71,11 @@
 	opacity: 1;
 }
 .pop-up{
-	top: 10%;
-	height: 87%;
-	width: 90%;
+	top: 50px;
+	height: 90%;
+	width: 95%;
 	display: flex;
+	padding: 10px 0px;
 	flex-direction: column;
 }
 .pop-up .profile-data{
@@ -82,7 +83,6 @@
 	min-height: 32vh;
 	display: flex;
 	flex-direction: column;
-	/display: none;
 }
 .profile-data > #profile_pic{
 	box-shadow: 0vw 0vw 5px #212121;
@@ -140,7 +140,10 @@
 	font-size: .9em;
 	overflow-y: scroll;
 	align-self: flex-end;
-	width: 97%;
+	width: 100%;
+}
+.popup-bio{
+	padding: 0px 10px;
 }
 .bio::-webkit-scrollbar{
 	width: .5vw;
