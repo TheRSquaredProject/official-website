@@ -171,9 +171,6 @@
 	padding: .8vw;
 	background: #F7F7F7;
 }
-.form-container input:focus{
-
-}
 .form-control:focus {
 	background: #FFFFFF;
       border-color: #454545;
