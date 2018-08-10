@@ -28,6 +28,35 @@
 	outline: none;
 }
 
+.material-button-yellow{
+    border: 0.1rem solid #FFFF00;
+    border-radius: .4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+	height: 40px;
+	line-height: 37px;
+	padding: 0px 20px 0px 20px;
+	letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	white-space: nowrap;
+	background-color: transparent;
+	color: #FFFF00;
+	transition: all linear 0.1s;
+}
+.material-button-yellow:hover{
+	color:white;
+	background-color: #FFF176;
+}
+.material-button-yellow:active{
+	background-color: #FFF176;
+}
+.material-button-yellow:focus{
+	outline: none;
+}
 
 .material-button-white{
     border: 0.08rem solid white;
