@@ -222,6 +222,11 @@ a, a:hover{
 	color:#4b4b4b;
 	text-align: center;
 }
+.workflow-button-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 /***************** what we do part end *************/
 
 
