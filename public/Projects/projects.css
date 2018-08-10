@@ -58,7 +58,9 @@ a, a:hover{
 .project:last-child{
 	margin-bottom: 15vw;
 }
-
+.gap{
+	height: 100px;
+}
 @media only screen and (max-width: 600px) {
 	.projects-container{
 		top: 19vw;
@@ -81,7 +83,7 @@ a, a:hover{
 		width: 100%;
 		font-size: 3vw;
 	}
-	.description > h2{
-		font-size: 7.1vw;
+	.description-container > h2{
+		font-size: 5vw;
 	}
 }
