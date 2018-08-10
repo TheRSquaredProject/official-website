@@ -9,5 +9,5 @@ after_success:
  — firebase deploy — project landingpage-a96fd — token $FIREBASE_TOKEN.
 branches:
   only:
-  - release
-  - master
+    - release
+    - master
