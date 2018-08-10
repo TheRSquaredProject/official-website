@@ -9,15 +9,43 @@
 .land{
     height: 50%;
 }
-
 .about-us-container{
+    padding-left: 2vw;
+    padding-right: 2vw;
     height: auto;
 }
-
 .about-us-content{
+    flex-direction: column;
     margin-top: 6vw;
 }
-
+.about-us-container .image-container{
+    display: none;
+}
+.text-container > .headline-container{
+	display: flex;
+	margin-bottom: 4vw;
+	flex-direction: column;
+}
+.text-container > .headline-container::before{
+	content: '';
+	position: absolute;
+	background: #212121;
+	width: 50%;
+	height: .4vw;
+	align-self: center;
+	top: 100%;
+}
+.text-container .headline{
+	font-size: 4em;
+}
+.text-container{
+    align-self: center;
+    min-width: 90%;
+}
+.text-container-content{
+	font-size: 1.5em;
+    padding-right: 0;
+}
 
 
 .what-we-do-container{
@@ -27,7 +55,7 @@
     font-size: 1em;
 }
 .headline{
-    font-size: 1.5em;
+    font-size: 9vw;
 }
 
 
@@ -40,48 +68,39 @@
 
 
 .what-we-do-content .what-we-do-card{
-    /border: 1px solid black;
     align-self: center;
     height: auto;
     font-size: .7em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 	min-width: 100vw;
 	margin: 1em 0em;
 }
 
 .what-we-do-content .card-title{
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .what-we-do-content .card-img-top{
-    /border: 1px solid black;
     align-self: center;
-	/height: 20vw;
+	height: 20vw;
 	padding: 3vw;
 	padding-bottom: 0;
 	padding-top: 2vw;
 	margin: 0;
-    min-width: 20vw;
+    min-width: 25vw;
 }
 
 .what-we-do-content .card-body{
-    /border: 1px solid black;
+	width: 90%;
+	align-self: center;
     height: auto;
     padding-top: 0;
     font-size: 1em;
     padding: 1em;
 }
-
-
-
-/*****************  associates part    **************/
-
-.associates-container .content{
-    margin-top: 5vw;
-}
-.associates-container .img-container img{
-    width: 40vw;
+.what-we-do-content .card-body .card-text{
+	text-align: center;
 }
 
 
@@ -91,7 +110,7 @@
 
 .featured-projects-container .content{
     margin-top: 6vw;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,23 +119,19 @@
 .featured-projects-container .content .project-card{
     margin: 1em;
     align-self: center;
-    width: 40%;
+    width: 85%;
 }
 
 .featured-projects-container .content .project-card .descriptor{
     position: absolute;
     bottom: 0;
-    background: rgba(245,245,245, .6);
-    /padding: .3em;
+    padding: .3em;
     padding-bottom: 0em;
 }
 .featured-projects-container .content .project-card .descriptor .name{
+	padding: 2vw;
     font-size: 1em;
-    font-family: 'patua one';
-}
-.featured-projects-container .content .project-card .descriptor .brief{
-    font-size: .5em;
-    font-family: roboto;
+    font-family: 'Roboto';
 }
 
 
@@ -208,6 +223,59 @@
 	color: #424242;
 	font-family: roboto;
 	font-size: 1.1em;
-	transition: .4s;
-	/font-weight: 600;
+}
+
+
+
+/***********shanzid***********/
+.cover-picture{
+	width: auto;
+	left:-40%;
+}
+.title-overlay{
+	width: 100%;
+	background: none;
+	background-color: rgba(0,0,0,0.3);
+}
+.graph-lines{
+	display: none;
+}
+.headline-text{
+	border-left: 0px;
+	width:100%;
+	top:45%;
+	padding-left: 0px;
+	margin: 0px auto;
+	text-align: center;
+}
+.headline-text h1{
+	font-size:13vw;
+	padding: 30px 0px;
+    background-color: #ffff8938;
+}
+.headline-text h2{
+	font-size:4vw;
+	margin: 10px 0px 0px 0px;
+	letter-spacing: 1px;
+}
+.headline-text h2 span{
+	display: inline;
+}
+.action-buttons{
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+	margin: 0px;
+}
+.action-buttons a{
+	margin: 0px 10px;
+}
+.contact-card-container{
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+.nav-links > .index-nav-item{
+	padding:0.4em;
 }
