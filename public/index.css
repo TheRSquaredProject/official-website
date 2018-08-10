@@ -71,12 +71,14 @@ a, a:hover{
 
 .associates-box{
 	min-height: 25vh;
-	height: 25vh;
 	width: 100vw;
 	background-color: #263238;
 	color:white;
 	text-align: center;
 	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .associates-title{
 	color: white;
@@ -85,12 +87,10 @@ a, a:hover{
 	letter-spacing: 3px;
 	opacity: 0.8;
 	display: block;
+	margin-bottom: 10px;
 }
 .associates-logo-quilt{
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	height: 100px;
+	min-height: 100px;
 }
 .associates-logo{
 	max-height: 40px;
@@ -332,7 +332,7 @@ a, a:hover{
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	font-family: 'Roboto';
-	font-weight: bold;
+	font-weight: 500;
 }
 /************* featured projects end ***************/
 
@@ -393,7 +393,7 @@ a, a:hover{
 	margin-top: -3px;
 	display: block;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 500;
 	text-decoration: underline;
 	color:#37474F;
 	transition: all linear 0.1s;
@@ -422,7 +422,7 @@ a, a:hover{
 }
 .form-submit-row a{
 	float: right;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 1em;
 }
 .button-container{
@@ -518,29 +518,6 @@ a, a:hover{
 .footer{
 	display: flex;
 	flex-direction: column;
-}
-.associates-box{
-	min-height: 25vh;
-	height: 25vh;
-	width: 100vw;
-	color:white;
-	text-align: center;
-	padding: 20px 50px;
-	position: relative;
-}
-.associates-title{
-	color: white;
-	font-family: 'Raleway';
-	font-size: 1.3em;
-	letter-spacing: 3px;
-	opacity: 0.8;
-	display: block;
-}
-.associates-logo-quilt{
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	min-height: 100px;
 }
 .associates-logo{
 	max-height: 40px;
