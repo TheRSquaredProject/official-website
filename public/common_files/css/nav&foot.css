@@ -80,13 +80,12 @@
 	.nav-container{
 		flex-direction: column;
 		padding-top: 3vw;
-		padding-bottom: 3vw;
 	}
 	.nav-logo{
 		padding-left: 0;
-		padding-bottom: 2vw;
 		align-self: center;
-		width: 40%;
+		margin-bottom: 15px; 
+		width: 50%;
 	}
 	.nav-links{
 		display: flex;
@@ -95,7 +94,9 @@
 		padding-right: 0;
 	}
 	.nav-links .nav-item{
-		padding: .4em;
+		padding: .6em 3vw;
+		letter-spacing: 1px;
+		font-size: 0.7em;
 	}
 }
 
