@@ -39,6 +39,7 @@
 
 }
 .person .bio{
+	overflow-y: hidden;
 	margin-top: 5px;
 	width: 100%;
 	flex-grow: 1;
@@ -55,4 +56,110 @@
 .person .bio span:hover{
 	text-decoration: underline;
 	text-shadow: 0px 0px .01px deepskyblue;
+}
+
+
+
+
+
+/********** pop up with the details *************/
+.pop-up .cross{
+	position: absolute;
+}
+.pop-up .cross:hover{
+	background: rgba(21,21,21,.14);
+	opacity: 1;
+}
+.pop-up{
+	top: 10%;
+	height: 87%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+.pop-up .profile-data{
+	align-content: center;
+	min-height: 32vh;
+	display: flex;
+	flex-direction: column;
+	/display: none;
+}
+.profile-data > #profile_pic{
+	box-shadow: 0vw 0vw 5px #212121;
+	margin-top: -10vw;
+	align-self: center;
+	width: 20vh;
+}
+
+.profile-data .info{
+	font-family: Roboto;
+	margin-top: 3vw;
+	margin-left: 0em;
+	flex-direction: column;
+}
+.info .name{
+	align-self: center;
+	font-size: 1.5em;
+}
+.info .designation{
+	align-self: center;
+	margin-top: .45vw;
+	font-size: 1.1em;
+}
+.info .project-name{
+	align-self: center;
+	margin-top: .3vw;
+	font-size: 1em;
+}
+
+.profile-data .social-links{
+	margin-top: 4vw;
+	align-self: center;
+	flex-grow: 1;
+	height: auto;
+	justify-content: center;
+}
+.social-links img{
+	margin: .7vw;
+	margin-left: 2vw;
+	width: 2em;
+	opacity: 0.9;
+	transition: all linear 0.1s;
+}
+.social-links img:hover{
+	transform: scale(1.05);
+	opacity: 1;
+}
+.social-links a{
+	align-self: center;
+}
+
+
+.bio{
+	font-family: Roboto;
+	font-size: .9em;
+	overflow-y: scroll;
+	align-self: flex-end;
+	width: 97%;
+}
+.bio::-webkit-scrollbar{
+	width: .5vw;
+}
+.bio > .info > .line{
+	margin-top: -.7vw;
+	display: flex;
+	flex-direction: column;
+}
+.line > .title{
+	font-weight: bold;
+	min-width: 10em;
+}
+.line > p{
+	margin-left: 0vw;
+}
+
+.bio > .main-bio{
+	font-size: 1em;
+	font-family: 'Roboto';
+	margin-top: 2vw;
 }
