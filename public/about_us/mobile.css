@@ -1,8 +1,12 @@
 .div-selector-container > .div-name{
 	font-size: .7em;
+	letter-spacing: 0px;
 	padding: 0.5em .2em;
 	margin: 0px 2px;
 	white-space: nowrap;
+	opacity: 1;
+	color: black;
+	font-weight: 400;
 }
 .division-container .content-container{
 	flex-direction: column;
@@ -116,8 +120,10 @@
 	margin-top: 4vw;
 	align-self: center;
 	flex-grow: 1;
-	height: auto;
+	padding: 5px 0px;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .social-links img{
 	margin: .7vw;
