@@ -85,14 +85,15 @@ a, a:hover{
 	display: flex;
 	flex-direction: column;
 	font-weight: 100;
-	opacity: 0.8;
+	opacity: 0.9;
+	font-weight: 400;
 }
 .div-selector-container > .div-name:hover{
 	opacity: 1;
 }
 .position-selected{
 	border-bottom:1.5px solid #212121 !important;
-	font-weight: 500 !important;
+	font-weight:500 !important;
 	color:#212121;
 	opacity: 1 !important;
 }

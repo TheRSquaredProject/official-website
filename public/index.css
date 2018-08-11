@@ -71,12 +71,14 @@ a, a:hover{
 
 .associates-box{
 	min-height: 25vh;
-	height: 25vh;
 	width: 100vw;
 	background-color: #263238;
 	color:white;
 	text-align: center;
 	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .associates-title{
 	color: white;
@@ -85,12 +87,10 @@ a, a:hover{
 	letter-spacing: 3px;
 	opacity: 0.8;
 	display: block;
+	margin-bottom: 10px;
 }
 .associates-logo-quilt{
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	height: 100px;
+	min-height: 100px;
 }
 .associates-logo{
 	max-height: 40px;
@@ -113,16 +113,16 @@ a, a:hover{
 .about-us-content{
 	position: relative;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-self: center;
-
+	width: 100%;
 }
 .text-container{
 	position: relative;
 	padding: 1vw;
 	display: flex;
 	flex-direction: column;
-	min-width: 70%;
+    max-width: 70%;
 	min-height: 100%;
 }
 .text-container > .headline-container{
@@ -144,9 +144,6 @@ a, a:hover{
 	position: relative;
 	padding-left: 2vw;
 	font-size: 3em;
-}
-.text-container .headline::after{
-    display: none;
 }
 .text-container-content{
 	font-size: 1.1em;
@@ -208,7 +205,7 @@ a, a:hover{
     max-width: 25vw;
 	margin: 0px;
 	padding-top: 0;
-	margin: 0 1vw;
+	margin: 0 0;
 }
 
 .what-we-do-content .card-link{
@@ -224,6 +221,12 @@ a, a:hover{
 	font-family: 'Roboto';
 	color:#4b4b4b;
 	text-align: center;
+}
+.workflow-button-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 1vw 0px;
 }
 /***************** what we do part end *************/
 
@@ -317,6 +320,8 @@ a, a:hover{
 }
 
 .featured-projects-container .content .project-card .descriptor{
+	width: 100%;
+	background: rgb(245,245,245);
 	margin-top: auto;
 	position: relative;
 	padding: .3em;
@@ -327,7 +332,7 @@ a, a:hover{
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	font-family: 'Roboto';
-	font-weight: bold;
+	font-weight: 500;
 }
 /************* featured projects end ***************/
 
@@ -336,11 +341,7 @@ a, a:hover{
 
 
 .nav-links > .index-nav-item{
-	font-family: Roboto, sans-serif;
-	letter-spacing: 2px;
-	font-size: 0.8rem;
 	color: aliceblue;
-	padding: 1em;
 }
 
 /*****************      form part      **************/
@@ -392,7 +393,7 @@ a, a:hover{
 	margin-top: -3px;
 	display: block;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 500;
 	text-decoration: underline;
 	color:#37474F;
 	transition: all linear 0.1s;
@@ -421,7 +422,7 @@ a, a:hover{
 }
 .form-submit-row a{
 	float: right;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 1em;
 }
 .button-container{
@@ -513,29 +514,10 @@ a, a:hover{
 	transform: scale(1.05);
 }
 
-.associates-box{
-	min-height: 25vh;
-	height: 25vh;
-	width: 100vw;
-	background-color: #263238;
-	color:white;
-	text-align: center;
-	padding: 20px 50px;
-	position: relative;
-}
-.associates-title{
-	color: white;
-	font-family: 'Raleway';
-	font-size: 1.3em;
-	letter-spacing: 3px;
-	opacity: 0.8;
-	display: block;
-}
-.associates-logo-quilt{
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	min-height: 100px;
+
+.footer{
+	display: flex;
+	flex-direction: column;
 }
 .associates-logo{
 	max-height: 40px;

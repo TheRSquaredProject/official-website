@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<meta name="theme-color" content="#212121" />
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +15,8 @@
 	<link rel="stylesheet" href="../common_files/css/nav&foot.css">
 	<link rel="stylesheet" href="./about.css">
 	<link rel="stylesheet" href="../common_files/css/common_styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Raleway:700" rel="stylesheet">
-	<!-- <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" /> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Raleway:700" rel="stylesheet">
+	<link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
 
 	<!-- jquery -->
 	<script src="../common_files/js/jquery-3.1.1.js"></script>
@@ -36,30 +37,30 @@
 		<div class="backdrop" onclick="$('.cross').click()"></div>
 		<div id="pop-up-window" class="pop-up">
 			<div class="profile-data">
-				<img src="members/intekhab_hossain.jpg">
+				<img id="profile_pic" src="members/intekhab_hossain.jpg">
 				<div class="info">
 					<span class="name"></span>
 					<span class="designation"></span>
 					<span class="project-name"></span>
 				</div>
 				<div class="social-links">
-					<a href="#" class="email">
+					<a href="#" target="_blank" class="email">
 						<img src="icons/email.svg">
 					</a>
-					<a href="#" class="facebook">
+					<a href="#" target="_blank" class="facebook">
 						<img src="icons/facebook.svg">
 					</a>
-					<a href="#" class="instagram">
+					<a href="#" target="_blank" class="instagram">
 						<img src="icons/instagram.svg">
 					</a>
-					<a href="#" class="twitter">
+					<a href="#" target="_blank" class="twitter">
 						<img src="icons/twitter.svg">
 					</a>
 				</div>
 				<img src="icons/cross.svg" class="cross">
 			</div>
 
-			<div class="bio">
+			<div class="bio popup-bio">
 				<div class="info">
 					<div class="line">
 						<span class="title"></span>
@@ -209,7 +210,7 @@
 						</div>
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Umama%20Zillur.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Umama_Zillur.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Umama Zillur</span></div>
@@ -350,7 +351,7 @@
 						</div>
 						<div class="person">
 							<div class="display-picture">
-								<img data-src="./members/tasmin.jpg" src="icons/loading.svg" alt="">
+								<img data-src="./members/tasnim.jpg" src="icons/loading.svg" alt="">
 							</div>
 							<div class="content">
 								<div class="name"><span>Mahbuba Tasnim</span></div>
@@ -446,7 +447,7 @@
 					</div>
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Fahim%20Faisal.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Fahim_Faisal.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Fahim Faisal</span></div>
@@ -491,7 +492,7 @@
 					<div class="content-container">
 						<div class="person">
 							<div class="display-picture">
-								<img data-src="./members/Fahim%20Shahriyar%20Mahfuz.jpg" src="icons/loading.svg" alt="">
+								<img data-src="./members/Fahim_Shahriyar_Mahfuz.jpg" src="icons/loading.svg" alt="">
 							</div>
 							<div class="content">
 								<div class="name"><span>Fahim Shahriyar Mahfuz</span></div>
@@ -538,7 +539,7 @@
 						</div>
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Mushfique%20Ahmed.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Mushfique_Ahmed.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Mushfique Ahmed</span></div>
@@ -583,7 +584,7 @@
 					</div>
 						<div class="person">
 							<div class="display-picture">
-								<img data-src="./members/TanveerKarim.jpg" src="icons/loading.svg" alt="">
+								<img data-src="./members/Tanveer_Karim.jpg" src="icons/loading.svg" alt="">
 							</div>
 							<div class="content">
 								<div class="name"><span>Tanveer Karim</span></div>
@@ -629,7 +630,7 @@
 					<div class="content-container">
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Rasheeq%20Islam.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Rasheeq_Islam.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Rasheeq Islam</span></div>
@@ -674,10 +675,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="copyright">
-			Copyright © 2018 The R-Squared Project
-		</div>
+	<div class="copyright">
+		Copyright © 2018 The R-Squared Project
 	</div>
 	
 	<script src="./about.js"></script>
