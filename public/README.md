@@ -6,6 +6,6 @@ please shoot an email to thersquaredproject@gmail.com
 
 <br>
 <br>
-<i>Website Design and Development by:</i><br>
+Website Design and Development by:<br>
 <a target="_blank" href="https://shanzid.com">Shanzid Shaiham</a><br>
 <a target="_blank" href="https://fb.com/almubin.nabil">Al-Mubin Khan Nabil</a>
