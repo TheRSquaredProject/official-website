@@ -24,6 +24,7 @@
 }
 .text-container > .headline-container{
 	display: flex;
+	margin-bottom: 10px;
 	flex-direction: column;
 }
 .text-container > .headline-container::before{
@@ -231,7 +232,7 @@
 /***********shanzid***********/
 .cover-picture{
 	width: auto;
-	left:-40%;
+	left:-150%;
 }
 .title-overlay{
 	width: 100%;
@@ -244,7 +245,7 @@
 }
 .headline-text{
 	border-left: 0px;
-	width:81%;
+	width:82%;
 	top:43%;
 	padding-left: 0px;
 	margin: 0px auto;
@@ -290,4 +291,10 @@
 }
 .contact-heading span:nth-of-type(2){
 	font-size: 1rem;
+}
+.cover-credits{
+	font-size: 10px;
+}
+.photo-credits{
+	display: none;
 }

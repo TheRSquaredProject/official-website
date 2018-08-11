@@ -5,4 +5,5 @@ $(document).ready(()=>{
             $(this).attr('src', imgurl);
         }
     });
+    $('img').bind('contextmenu', function(e) {return false;});
 });
