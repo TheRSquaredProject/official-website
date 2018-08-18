@@ -126,10 +126,7 @@
 }
 
 .featured-projects-container .content .project-card .descriptor{
-    position: absolute;
-    bottom: 0;
     padding: .3em;
-    padding-bottom: 0em;
 }
 .featured-projects-container .content .project-card .descriptor .name{
 	padding: 2vw;
