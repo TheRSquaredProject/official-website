@@ -316,7 +316,6 @@ a, a:hover{
 
 .featured-projects-container .content .project-card .descriptor{
 	width: 100%;
-	background: rgb(245,245,245);
 	margin-top: auto;
 	position: relative;
 	padding: .3em;
@@ -550,7 +549,7 @@ a, a:hover{
 	right: 10%;
 	bottom: 10%;
 	text-align: center;
-	background: #212121e0;
+	background: #212121ee;
 	color: white;
 	padding: 10px 30px;
 	border-radius: 5px;

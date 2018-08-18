@@ -19,7 +19,7 @@
     flex-direction: column;
     margin-top: 6vw;
 }
-.about-us-container .image-container{
+.goal-image{
     display: none;
 }
 .text-container > .headline-container{
