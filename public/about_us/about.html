@@ -2,19 +2,22 @@
 <html lang="en">
 
 <head>
+	<meta name="theme-color" content="#212121" />
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- meta data for SEO -->
-    <meta name="description" content="">
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" type="image/png" href="../common_files/favicon.png"/>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../common_files/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../common_files/css/nav&foot.css">
 	<link rel="stylesheet" href="./about.css">
 	<link rel="stylesheet" href="../common_files/css/common_styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Raleway:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Raleway:700" rel="stylesheet">
 	<link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
 
 	<!-- jquery -->
@@ -43,23 +46,23 @@
 					<span class="project-name"></span>
 				</div>
 				<div class="social-links">
-					<a href="#" class="email">
+					<a href="#" target="_blank" class="email">
 						<img src="icons/email.svg">
 					</a>
-					<a href="#" class="facebook">
+					<a href="#" target="_blank" class="facebook">
 						<img src="icons/facebook.svg">
 					</a>
-					<a href="#" class="instagram">
+					<a href="#" target="_blank" class="instagram">
 						<img src="icons/instagram.svg">
 					</a>
-					<a href="#" class="twitter">
+					<a href="#" target="_blank" class="twitter">
 						<img src="icons/twitter.svg">
 					</a>
 				</div>
 				<img src="icons/cross.svg" class="cross">
 			</div>
 
-			<div class="bio">
+			<div class="bio popup-bio">
 				<div class="info">
 					<div class="line">
 						<span class="title"></span>
@@ -84,7 +87,7 @@
 	<nav class="navbar nav-container">
 		<div class="nav-logo ">
 			<a href="../index.html" class="nav-logo">
-				<img src="../common_files/rsquared_logo.png" class="logo">
+				<img src="../common_files/rsquared_logo.png" class="logo secure-img">
 			</a>
 		</div>
 		<div class="nav-links">
@@ -126,7 +129,7 @@
 							</div>
 							<!-- hidden content for serving data for detailed pop-up -->
 							<div class="details hide">
-								<span class="designation">Founder, Lead Statistician</span>
+								<span class="designation">Co-founder and Lead Statistician</span>
 								<span class="project-name"></span>
 								<div class="social-links">
 									<span class="facebook"></span>
@@ -142,7 +145,7 @@
 									</div>
 									<div class="line">
 										<span class="title">Current Workplace(s):</span>
-										<p class="data">Analysis Group, Boston, MA, USA</p>
+										<p class="data">Analysis Group, MA, USA</p>
 									</div>
 									<div class="line">
 										<span class="title">Interests:</span>
@@ -151,12 +154,13 @@
 								</div>
 								<p class="main-bio">
 										As someone who is constantly looking for ways to apply quantitative sciences to real-world
-										situations, Intekhab is heavily interested in leveraging statistics to create social benefit in Bangladesh.
-										He focuses on helping non-profit organizations understand the value of data-analysis, and providing
-										them with statistical insight into their data. Intekhab is also passionate about teaching, and is always
-										eager to advise his peers about how seemingly minor ideas from probability-theory and stochastic -
-										processes can be used to optimize simple daily-life scenarios. Currently Intekhab working on designing
-										models and data-visualization tools for exploring many critical socioeconomic issues of Bangladesh.
+										situations, Intekhab is heavily interested in leveraging statistics to create social benefit in
+										Bangladesh. He focuses on helping non-profit organizations understand the value of data-analysis,
+										and providing them with statistical insight into their data. Intekhab is also passionate about
+										teaching, and is always eager to advise his peers about how seemingly minor ideas from
+										probability-theory and stochastic-processes can be used to optimize simple daily-life scenarios.
+										Currently Intekhab is working on designing models and data-visualization tools for exploring
+										many critical socioeconomic issues of Bangladesh.
 								</p>
 							</div>
 						</div>
@@ -188,7 +192,7 @@
 									<div class="line">
 										<span class="title">Education:</span>
 										<p class="data">Bachelor of Science with Honors in Computer Science
-												<p>Washington and Lee University, VA, USA</p>
+											<br>Washington and Lee University, VA, USA</p>
 									</div>
 									<div class="line">
 										<span class="title">Current Workplace(s):</span>
@@ -201,15 +205,19 @@
 									</div>
 								</div>
 								<p class="main-bio">
-										Software Engineer with an entrepreneurial spirit! He loves creating things and seeing them come to life. Azmain sees code as a living, breathing thing that grows into wonderful tools that helps people. To him, the ultimate purpose of technology is to evolve and enhance human life, and that’s why The R-Squared Project is such an integral part of his life.
-										<br><br>
-										Azmain believes in paying-it-forward and sharing his experience with others. One of his personal goals is to use technology to improve Bangladesh. He believes a lot of problems that Bangladesh faces can be tackled using the right technology and strategy.
+										Software Engineer with an entrepreneurial spirit! He loves creating things and seeing them come
+										to life. Azmain sees code as a living, breathing thing that grows into wonderful tools to helps
+										people. To him the ultimate purpose of technology is to evolve and enhance human life, and that’s
+										why The R-স্কয়ার্ড Project is such an integral part of his life. Azmain believes in paying-it-forward
+										and sharing his experience with others. One of his personal goals is to use technology to improve
+										Bangladesh. He believes a lot of problems that Bangladesh faces can be tackled using the right
+										technology and strategy.
 								</p>
 							</div>
 						</div>
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Umama%20Zillur.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Umama_Zillur.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Umama Zillur</span></div>
@@ -244,16 +252,13 @@
 									<p class="data">Behavioral Economics, Economics of Gender, Exploring Identity Through Food , Basketball, Fashion Design</p>
 								</div>
 								<p class="main-bio">
-									Umama is an advocate for innovative social engagements and likes to constantly challenge herself. Her quantitative skills and background in social sciences help her to approach R² projects from a different perspective.
-									<br><br>
-									Umama actively tries to fight the ideas and attitudes that cultivate a culture of violence. This led her to start Kotha, a primary violence prevention program focused on the Bangladeshi youth.
+										Umama is an advocate for innovative social engagements and likes to constantly challenge herself.
+										Her quantitative skills and background in social sciences help her to approach The R-স্কয়ার্ড
+										Project from a different perspective. Umama actively tries to fight the ideas and attitudes that
+										cultivate a culture of violence. This led her to start Kotha, a primary violence prevention program
+										focused on the Bangladeshi youth.
 								</p>
 							</div>
-							<p class="main-bio">
-								 Umama is an advocate for innovative social engagements and likes to constantly challenge herself. Her quantitative skills and background in social sciences help her to approach R² projects from a different perspective.
-								Umama actively tries to fight the ideas and attitudes that cultivate a culture of violence. This led her to start Kotha, a primary violence prevention program focused on the Bangladeshi youth.
-
-							</p>
 						</div>
 					</div>
 					</div>
@@ -274,10 +279,10 @@
 						</div>
 						<!-- hidden content for serving data for detailed pop-up -->
 						<div class="details hide">
-							<span class="designation">Web App Developer</span>
+							<span class="designation">Fullstack Developer</span>
 							<span class="project-name"></span>
 							<div class="social-links">
-								<span class="facebook">www.facebook.com/almubin.nabil</span>
+								<span class="facebook">https://www.facebook.com/almubin.nabil</span>
 								<span class="twitter"></span>
 								<span class="email">thetwin11100@gmail.com</span>
 								<span class="instagram">https://www.instagram.com/nirobnabil/</span>
@@ -288,9 +293,9 @@
 									<p class="data"> St. Gregory’s High School, Dhaka
 									<br> Notre Dame College </p>
 								</div>
-								<div class="line">
-									<span class="title">Current Workplace(s):</span>
-									<p class="data">N/A</p>
+								 <div class="line">
+									<span class="title"></span>
+									<p class="data"></p>
 								</div>
 								<div class="line">
 									<span class="title">Interests:</span>
@@ -298,9 +303,17 @@
 								</div>
 							</div>
 							<p class="main-bio">
-								Being someone who doesn’t like crowded places ( or a bad headphone) , Nabil defines himself as an introvert. As most of his interests are tech-related, he often finds himself staring at a computer screen more and socializing less - something he wouldn’t change for the world. Nabil taught himself HTML and CSS in 9th grade and started making personal websites. Later, he moved towards harder things like Javascript, C++ and Python through something books and ‘trial and error’ which is basically short for - face a problem, google it, google it again and then fix the problem. He wishes to get good enough to work for tech giants like Google or Microsoft or some place where he can work with actually passionate and dedicated people to be a part of making something big.
-
-								He started working for the R-Squared Project mainly because its potential and dedication to strive for greatness. Even though it may seem like his world revolves only around electronics and computers, Nabil has goals of his own. He wants to bring changes in the mindset of people and broaden their views, and he has a strong belief this project can help him achieve that.
+									Being someone who doesn’t like crowded places (or a bad headphone) , Nabil defines himself as an
+									introvert. As most of his interests are tech-related, he often finds himself staring at a computer
+									screen more and socializing less - something he wouldn’t change for the world. Nabil taught
+									himself HTML and CSS in 9th grade and started making personal websites. Later, he moved
+									towards harder things like Javascript, C++ and Python through books and ‘trial and error’ which is
+									basically short for - face a problem, google it, google it again and then fix the problem. He wishes to
+									get good enough to work for tech giants like Google or Microsoft. He started working for The R-
+									স্কয়ার্ড Project mainly because of its potential and dedication to strive for greatness. Even though
+									it may seem like his world revolves only around electronics and computers, Nabil has goals of his
+									own. He wants to bring changes in the mindset of people and broaden their views, and he has a
+									strong belief this project can help him achieve that.
 
 							</p>
 						</div>
@@ -343,14 +356,14 @@
 								</div>
 								<p class="main-bio">
 									Shanzid – an ambivert with three amazing friends, a loving family and an obvious knack for machine learning. Having an obsession with programming, web-development and robotics, Shanzid likes to call himself a science and tech geek. He loves creating things; he likes to form a vision of things and believes programming provides a great way of making it a reality.
-									<br/><br/>
-									Shanzid is someone who loves programming and helping others. So, he believes his work at the R-Squared Project gives him an opportunity to code and help people at the same time.
+
+									Shanzid is someone who loves programming and helping others. So, he believes his work at the R-স্কয়ার্ড Project gives him an opportunity to code and help people at the same time.
 								</p>
 							</div>
 						</div>
 						<div class="person">
 							<div class="display-picture">
-								<img data-src="./members/" src="icons/loading.svg" alt="">
+								<img data-src="./members/tasnim.jpg" src="icons/loading.svg" alt="">
 							</div>
 							<div class="content">
 								<div class="name"><span>Mahbuba Tasnim</span></div>
@@ -362,7 +375,7 @@
 							</div>
 							<!-- hidden content for serving data for detailed pop-up -->
 							<div class="details hide">
-								<span class="designation">Software Developer</span>
+								<span class="designation">Fullstack Developer</span>
 								<span class="project-name"></span>
 								<div class="social-links">
 									<span class="facebook"></span>
@@ -374,11 +387,11 @@
 									<div class="line">
 										<span class="title">Education:</span>
 										<p class="data">Undergraduate Student of Computer Science and Engineering
-											<br>North South University,Dhaka </p>
+											<br>North South University, Dhaka </p>
 									</div>
 									<div class="line">
-										<span class="title">Current Workplace(s):</span>
-										<p class="data">N/A</p>
+										<span class="title"></span>
+										<p class="data"></p>
 									</div>
 									<div class="line">
 										<span class="title">Interests:</span>
@@ -386,7 +399,14 @@
 									</div>
 								</div>
 								<p class="main-bio">
-									 As the student of computer science and engineering, Mahbuba loves to do projects or works that would be beneficial for the society and people.  She never opted for engineering before she got admitted in this subject but now she is enjoying to the fullest. Also , she is a conscious citizen who is aware of the country’s situation and she likes to do better for this nation.  She joined The R² project with this aim to work for solutions of  some real life problems of Bangladesh through her earned knowledge. Mahbuba wants to lead a life of a researcher in future in the field of HCI and data science. Currently she is pursuing her undergraduate studies, doing some research works under faculties at NSU, working as a lead in NSU ACM Student Chapter and voluntary work at The R² project.
+										As a student of computer science and engineering, Mahbuba loves to do projects that would be
+										beneficial for the society and people. She never opted for engineering before she got admitted in
+										this subject but now she is enjoying it to the fullest. She is also a conscious citizen who is aware of
+										the country’s situation and she likes to aspire towards the betterment of this nation. She joined
+										The R-স্কয়ার্ড Project with this aim: to work for solutions to some real life problems of
+										Bangladesh. In the future, Mahbuba wants to lead the life of a researcher in the field of HCI and
+										data science. Currently she is pursuing her undergraduate studies, doing some research work
+										under faculties at NSU and working as a lead in NSU ACM Student Chapter.
 								</p>
 							</div>
 						</div>
@@ -422,8 +442,8 @@
 									<p class="data">Carmel School Kuwait, The Millennium Stars,<br> Shaheed Anwar Girls’ College, Rajuk Uttara Model College</p>
 								</div>
 								<div class="line">
-									<span class="title">Current Workplace(s):</span>
-									<p class="data">N/A</p>
+									<span class="title"></span>
+									<p class="data"></p>
 								</div>
 								<div class="line">
 									<span class="title">Interests:</span>
@@ -431,22 +451,13 @@
 								</div>
 							</div>
 							<p class="main-bio">
-								Antara is a girl with a gigantic name and a tiny existence. Currently in her 2nd gap year, she still
-								struggles with low self-esteem and being confused for a 6th grader. Besides procrastination and
-								scrolling through memes, she spends most of her time sketching or writing reviews.
-								<br><br>
-								Being the youngest in her family, she always felt unheard - which lead to writing more and talking less.
-								She loves SpongeBob memes, anime, horror movies and tiny animals. Other than finally owning a
-								bunny someday, Antara’s final goal is to bring a noticeable change in her country (maybe even in the
-								world), which is one of the reasons for her joining the R- Squared Project. She believes that this project
-								not only has the potential to bring changes in the system, but also keep her inspired to do so on her
-								own someday.
+									Antara is a girl with a gigantic name and a tiny existence. Currently in her 2nd gap year, she still struggles with low self-esteem and being confused for a 6th grader. Besides procrastination and scrolling through memes, she spends most of her time sketching or writing reviews. Being the youngest in her family, she always felt unheard - which lead to writing more and talking less. She loves SpongeBob memes, anime, horror movies and tiny animals. Other than finally owning a bunny someday, Antara’s final goal is to bring a noticeable change in her country (maybe even in the world), which is one of the reasons for her joining The R-স্কয়ার্ড Project. She believes that this project has the potential to bring much-needed changes in the system.
 							</p>
 						</div>
 					</div>
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Fahim%20Faisal.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Fahim_Faisal.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Fahim Faisal</span></div>
@@ -472,8 +483,8 @@
 									<p class="data">Dhaka International School (Graduated 2018)</p>
 								</div>
 								<div class="line">
-									<span class="title">Current Workplace(s):</span>
-									<p class="data">N/A</p>
+									<span class="title"></span>
+									<p class="data"></p>
 								</div>
 								<div class="line">
 									<span class="title">Interests:</span>
@@ -481,7 +492,7 @@
 								</div>
 							</div>
 							<p class="main-bio">
-								 An adventure-geared introvert with versatile interests, Fahim takes on life every day with an unquenching thirst for knowledge. In fact, his love for his bed is only defeated by his determination to discover how the world works through the perspectives of a variety of disciplines. His belief in the power of knowledge leads him to put it into use whenever he can for the greater good; his love of algorithms plays a vital role in his attempts at searching for efficient and quick solutions to problems. Pessimistic as he might seem to many of the people who know him, his work for the Project is driven by his belief that with a well-informed society, there is no barrier to solving the problems that we face in O(1) time.
+									An adventure-geared introvert with versatile interests, Fahim takes on life every day with an unquenchable thirst for knowledge. In fact, his love for his bed is only defeated by his determination to discover how the world works through the perspectives of a variety of disciplines. His belief in the power of knowledge leads him to put it into use whenever he can for the greater good; his love of algorithms plays a vital role in his attempts at searching for efficient and quick solutions to problems. Pessimistic as he might seem to many of the people who know him, his work for The R-স্কয়ার্ড Project is driven by his belief that with a well-informed society, there is no barrier to solving the problems that we face in O(1) time.
 							</p>
 						</div>
 						</div>
@@ -491,7 +502,7 @@
 					<div class="content-container">
 						<div class="person">
 							<div class="display-picture">
-								<img data-src="./members/Fahim%20Shahriyar%20Mahfuz.jpg" src="icons/loading.svg" alt="">
+								<img data-src="./members/Fahim_Shahriyar_Mahfuz.jpg" src="icons/loading.svg" alt="">
 							</div>
 							<div class="content">
 								<div class="name"><span>Fahim Shahriyar Mahfuz</span></div>
@@ -518,8 +529,8 @@
 										<br>University of Maryland, MD, USA</p>
 									</div>
 									<div class="line">
-										<span class="title">Current Workplace(s):</span>
-										<p class="data">N/A</p>
+										<span class="title"></span>
+										<p class="data"></p>
 									</div>
 									<div class="line">
 										<span class="title">Interests:</span>
@@ -527,18 +538,13 @@
 									</div>
 								</div>
 								<p class="main-bio">
-									Shahriyar is an aspiring polymath and a caffeine dependent terrestrial with a drive for computer science, psychology, robotics, research physics, data science, and sports. You don’t always have to be the strongest brick in the wall in order to find a crevice – mending it has to be the goal.  Shahriyars goal was to be able to work by being as close as possible to the problems in our society and working at The R Squared Project has done exactly that for him.
-									<br><br>
-									<i>
-									 "He is very thorough in pointing out different aspects of the problems precisely, His analytical skills towards problem-solving is mentionable"
-									</i><br>
-									- Dr. Shaila Pervin, IBM Researcher, Ph.D. in IT, IBM.
+										Shahriyar is an aspiring polymath and a caffeine dependent terrestrial with a drive for computer science, psychology, robotics, research physics, data science, and sports. You don’t always have to be the strongest brick in the wall in order to find a crevice – mending it has to be the goal. Shahriyar’s goal was to be able to work by being as close as possible to the problems in our society and working at The R-স্কয়ার্ড Project has done exactly that for him. Dr. Shaila Pervin (IBM Researcher, Ph.D. in IT, IBM) has praised him saying, <i>"He is very thorough in pointing out different aspects of the problems precisely, His analytical skills towards problem-solving is mentionable."</i>
 								</p>
 							</div>
 						</div>
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Mushfique%20Ahmed.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Mushfique_Ahmed.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Mushfique Ahmed</span></div>
@@ -575,15 +581,15 @@
 							</div>
 							<p class="main-bio">
 								As a budding machine learning enthusiast who is slowly finding his niche and a good use of his future degree in the field of IoT, Mushfique is constantly trying to apply his growing knowledge to solve real world machine learning problems. His current focus is on using statistical analysis to explore the common socioeconomic issues that persist in Bangladesh and the role of media in reporting them.
-								<br><br>
-								Despite his hopes of becoming a doctor not coming though, Mushfique hopes to someday contribute to the field of healthcare and medicine through his software engineering and artificial intelligence experience. Mushfique was told never to forget his roots and hopes to help build a better Bangladesh through his contributions in the R-squared project.
+
+								Despite his hopes of becoming a doctor not coming though, Mushfique hopes to someday contribute to the field of healthcare and medicine through his software engineering and artificial intelligence experience. Mushfique was told never to forget his roots and hopes to help build a better Bangladesh through his contributions in the R-স্কয়ার্ড project.
 
 							</p>
 						</div>
 					</div>
 						<div class="person">
 							<div class="display-picture">
-								<img data-src="./members/TanveerKarim.jpg" src="icons/loading.svg" alt="">
+								<img data-src="./members/Tanveer_Karim.jpg" src="icons/loading.svg" alt="">
 							</div>
 							<div class="content">
 								<div class="name"><span>Tanveer Karim</span></div>
@@ -619,7 +625,7 @@
 									</div>
 								</div>
 								<p class="main-bio">
-									While Tanveer is an astrophysicist by profession, the applicability of data analysis skills he learnt from astronomy in social problems made him interested in R Squared. He is fascinated by how similar statistical modelling approaches can be utilized to solve both cosmological and more down to earth and pressing problems. He hopes to use his skills to address some of the challenges that Bangladesh faces via the R Squared platform.
+										While Tanveer is an astrophysicist by profession, the applicability of data analysis skills he learnt from astronomy in social problems made him interested The R-স্কয়ার্ড Project. He is fascinated by how similar statistical modeling approaches can be utilized to solve both cosmological and more down to earth and pressing problems. He hopes to use his skills to address some of the challenges that Bangladesh faces via The R-স্কয়ার্ড platform.
 								</p>
 							</div>
 						</div>
@@ -629,12 +635,12 @@
 					<div class="content-container">
 						<div class="person">
 						<div class="display-picture">
-							<img data-src="./members/Rasheeq%20Islam.jpg" src="icons/loading.svg" alt="">
+							<img data-src="./members/Rasheeq_Islam.jpg" src="icons/loading.svg" alt="">
 						</div>
 						<div class="content">
 							<div class="name"><span>Rasheeq Islam</span></div>
 							<div class="bio">
-								<p>As someone who loves the concept of creativity in every aspect of life, Rasheeq joined the R-squared Project team in order...
+								<p>As someone who loves the concept of creativity in every aspect of life, Rasheeq joined the R-স্কয়ার্ড Project team in order...
 									<span>read more</span>
 								</p>
 							</div>
@@ -656,8 +662,8 @@
 										<br>Ritsumeikan Asia Pacific University, Japan.</p>
 								</div>
 								<div class="line">
-									<span class="title">Current Workplace(s):</span>
-									<p class="data">N/A</p>
+									<span class="title"></span>
+									<p class="data"></p>
 								</div>
 								<div class="line">
 									<span class="title">Interests:</span>
@@ -665,7 +671,7 @@
 								</div>
 							</div>
 							<p class="main-bio">
-								As someone who loves the concept of creativity in every aspect of life, Rasheeq joined the R-squared Project team in order to make sense of the complex data for the general public. He believes in the vision of creating social benefit in Bangladesh and that is what his goal is with all his efforts. He Is also passionate about videography and entrepreneurship and dreams to make a positive impact on the lives of people around him connecting these two.
+								As someone who loves the concept of creativity in every aspect of life, Rasheeq joined the R-স্কয়ার্ড Project team in order to make sense of the complex data for the general public. He believes in the vision of creating social benefit in Bangladesh and that is what his goal is with all his efforts. He Is also passionate about videography and entrepreneurship and dreams to make a positive impact on the lives of people around him connecting these two.
 
 						</div>
 					</div>
@@ -674,8 +680,14 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="website-credits">
+		<span>Website designed and developed by:</span><br>
+		<p>Shanzid Shaiham (https://shanzid.com)</p>
+		<p>Al-Mubin Khan Nabil (https://fb.com/almubin.nabil)</p>
+	</div>
 	<div class="copyright">
-		Copyright © 2018 The R-Squared Project
+		Copyright © 2018 The R-স্কয়ার্ড Project
 	</div>
 	
 	<script src="./about.js"></script>

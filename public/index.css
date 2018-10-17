@@ -1,7 +1,7 @@
 html,body
 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     margin: 0px;
 	padding: 0px;
 }
@@ -26,17 +26,14 @@ a, a:hover{
 	height: 1.5vw;
 	background: #212121;
 }
+.nav-links > .index-nav-item{
+	color: aliceblue;
+}
 
 /****************** cover pic ***********************/
 .cover-page{
 	height: 100vh;
 	width: 100vw;
-}
-.cover-picture{
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 .details{
 	padding-bottom: 2vw;
@@ -70,13 +67,16 @@ a, a:hover{
 }
 
 .associates-box{
-	min-height: 25vh;
-	height: 25vh;
+	height: auto;
 	width: 100vw;
 	background-color: #263238;
 	color:white;
 	text-align: center;
 	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
 }
 .associates-title{
 	color: white;
@@ -85,12 +85,10 @@ a, a:hover{
 	letter-spacing: 3px;
 	opacity: 0.8;
 	display: block;
+	margin-bottom: 10px;
 }
 .associates-logo-quilt{
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	height: 100px;
+	min-height: 100px;
 }
 .associates-logo{
 	max-height: 40px;
@@ -205,7 +203,7 @@ a, a:hover{
     max-width: 25vw;
 	margin: 0px;
 	padding-top: 0;
-	margin: 0 1vw;
+	margin: 0 0;
 }
 
 .what-we-do-content .card-link{
@@ -226,6 +224,7 @@ a, a:hover{
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin: 1vw 0px;
 }
 /***************** what we do part end *************/
 
@@ -331,21 +330,11 @@ a, a:hover{
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	font-family: 'Roboto';
-	font-weight: bold;
+	font-weight: 500;
 }
 /************* featured projects end ***************/
 
 
-
-
-
-.nav-links > .index-nav-item{
-	font-family: Roboto, sans-serif;
-	letter-spacing: 2px;
-	font-size: 0.8rem;
-	color: aliceblue;
-	padding: 1em;
-}
 
 /*****************      form part      **************/
 .contact-box{
@@ -396,7 +385,7 @@ a, a:hover{
 	margin-top: -3px;
 	display: block;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 500;
 	text-decoration: underline;
 	color:#37474F;
 	transition: all linear 0.1s;
@@ -425,7 +414,7 @@ a, a:hover{
 }
 .form-submit-row a{
 	float: right;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 1em;
 }
 .button-container{
@@ -435,13 +424,18 @@ a, a:hover{
 }
 
 .cover-page{
+	background: #212121;
 	height: 100vh;
 	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .cover-picture{
+	align-self: center;
 	z-index: 0;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: auto;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -450,9 +444,9 @@ a, a:hover{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 70%;
+	width: 100%;
 	height: 100%;
-	background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+	background: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.7),rgba(0,0,0,0));
 	/* background: rgba(0,0,0,0.5);
 	box-shadow:inset 0 0 10px #000000;
 	clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%); */
@@ -516,36 +510,51 @@ a, a:hover{
 .social-buttons a:hover{
 	transform: scale(1.05);
 }
-
-
-.footer{
-	display: flex;
-	flex-direction: column;
-}
-.associates-box{
-	min-height: 25vh;
-	height: 25vh;
-	width: 100vw;
-	color:white;
-	text-align: center;
-	padding: 20px 50px;
-	position: relative;
-}
-.associates-title{
-	color: white;
-	font-family: 'Raleway';
-	font-size: 1.3em;
-	letter-spacing: 3px;
-	opacity: 0.8;
-	display: block;
-}
-.associates-logo-quilt{
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	min-height: 100px;
-}
 .associates-logo{
 	max-height: 40px;
 	margin: 10px 30px;
+}
+
+.cover-credits{
+	position: absolute;
+	font-family: "Roboto",sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	left: 0;
+	bottom: 10px;
+	color: white;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 13px;
+	opacity: 0.3;
+	transition: 0.2s linear all;
+	letter-spacing: 4px;
+	z-index: 2;
+}
+.cover-credits:hover{
+	opacity: 1;
+}
+.cover-credits a{
+	letter-spacing: 2.24px;
+	color: white;
+}
+.cover-credits a:hover{
+	text-decoration: underline;
+}
+.photo-credits{
+	position: absolute;
+	font-family: "Roboto";
+	font-weight: 400;
+	letter-spacing: 1px;
+	width: 80%;
+	right: 10%;
+	bottom: 10%;
+	text-align: center;
+	background: #212121e0;
+	color: white;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 13px;
+	opacity: 0;
+	transition: 0.2s linear all;
 }

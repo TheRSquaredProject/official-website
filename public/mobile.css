@@ -1,17 +1,70 @@
+
+
+/************** cover pic ***********/
+.cover-picture{
+	width: auto;
+	left:-150%;
+}
+.title-overlay{
+	width: 100%;
+	height: 150%;
+	background: none;
+	background-color: rgba(0,0,0,0.65);
+}
+.graph-lines{
+	display: none;
+}
+.headline-text{
+	border-left: 0px;
+	width:82%;
+	top:43%;
+	padding-left: 0px;
+	margin: 0px auto;
+	text-align: left;
+}
+.headline-text h1{
+	font-size:13vw;
+	padding: 10px 0px;
+	/* color:  */
+    /* background-color: #ffff8938; */
+}
+/* .headline-text h1 span{
+	display: block;
+} */
+.headline-text h1 span:nth-child(2){
+	color: #ffbc49;
+}
+.headline-text h2{
+	font-size:4vw;
+	margin: 10px 0px 20px 0px;
+	letter-spacing: 1px;
+}
+.headline-text h2 span{
+	display: inline;
+}
+.action-buttons{
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+	margin: 0px;
+}
+.action-buttons a{
+	margin: 0px 10px;
+}
+/************** cover pic end *****************/
+
+
 .about-us-content{
     font-size: .5em;
 }
-
-/*
-.land-cover-img{
-    min-height: auto;
-}*/
 .land{
     height: 50%;
 }
 .about-us-container{
     padding-left: 2vw;
-    padding-right: 2vw;
+	padding-right: 2vw;
+	padding-top: 0px;
     height: auto;
 }
 .about-us-content{
@@ -23,31 +76,34 @@
 }
 .text-container > .headline-container{
 	display: flex;
-	margin-bottom: 4vw;
+	margin-bottom: 10px;
 	flex-direction: column;
 }
 .text-container > .headline-container::before{
 	content: '';
 	position: absolute;
 	background: #212121;
-	width: 50%;
-	height: .4vw;
+	width: 20%;
+	height: .7vw;
 	align-self: center;
 	top: 100%;
+	display: none;
 }
 .text-container .headline{
-	font-size: 4em;
+	font-size: 9vw;
+	padding: 1vw;
 }
 .text-container{
     align-self: center;
     min-width: 90%;
 }
 .text-container-content{
-	font-size: 1.5em;
-    padding-right: 0;
+	font-size: 2em;
+	padding-right: 0;
 }
 
 
+/*********** what we do *************/
 .what-we-do-container{
     padding-top: 10vw;
 }
@@ -133,7 +189,9 @@
     font-size: 1em;
     font-family: 'Roboto';
 }
-
+.button-container{
+	margin-top: 20px;
+}
 
 
 
@@ -170,9 +228,6 @@
 	width: 100%;
 	padding: .8vw;
 	background: #F7F7F7;
-}
-.form-container input:focus{
-
 }
 .form-control:focus {
 	background: #FFFFFF;
@@ -227,56 +282,22 @@
 
 
 
-/***********shanzid***********/
-.cover-picture{
-	width: auto;
-	left:-40%;
-}
-.title-overlay{
-	width: 100%;
-	background: none;
-	background-color: rgba(0,0,0,0.3);
-}
-.graph-lines{
-	display: none;
-}
-.headline-text{
-	border-left: 0px;
-	width:100%;
-	top:45%;
-	padding-left: 0px;
-	margin: 0px auto;
-	text-align: center;
-}
-.headline-text h1{
-	font-size:13vw;
-	padding: 30px 0px;
-	//color: #ffd632;
-    /background-color: #ffff8938;
-}
-.headline-text h2{
-	font-size:4vw;
-	margin: 10px 0px 0px 0px;
-	letter-spacing: 1px;
-}
-.headline-text h2 span{
-	display: inline;
-}
-.action-buttons{
-	top: 40%;
-	width: 100%;
-	text-align: center;
-	margin-left: 0px;
-	margin: 0px;
-}
-.action-buttons a{
-	margin: 0px 10px;
-}
+/*********** contact us card ***********/
+
 .contact-card-container{
 	padding-left: 0px;
 	padding-right: 0px;
 
 }
-.nav-links > .index-nav-item{
-	padding:0.4em;
+.contact-heading span:nth-of-type(1){
+	font-size: 2rem;
+}
+.contact-heading span:nth-of-type(2){
+	font-size: 1rem;
+}
+.cover-credits{
+	font-size: 10px;
+}
+.photo-credits{
+	display: none;
 }
