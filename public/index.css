@@ -291,13 +291,9 @@ a, a:hover{
 
 .featured-projects-container .content .project-card{
     border-radius: 5px;
-    overflow: hidden;
     position: relative;
 	width: 35%;
-	display: flex;
-	flex-direction: column;
 	cursor: pointer;
-	overflow-y: hidden;
 	margin: 0px 2vw;
 	background: rgb(247, 247, 247);
 }
@@ -309,14 +305,13 @@ a, a:hover{
 .featured-projects-container .content .project-card .project-img{
 	border-radius: 3px;
 	align-self: center;
-	margin: 1vw;
+	margin: 2%;
 	margin-bottom: 0vw;
-	width: 95%;
+	width: 96%;
 }
 
 .featured-projects-container .content .project-card .descriptor{
 	width: 100%;
-	background: rgb(245,245,245);
 	margin-top: auto;
 	position: relative;
 	padding: .3em;
@@ -324,6 +319,7 @@ a, a:hover{
 }
 .featured-projects-container .content .project-card .descriptor .name{
 	padding: 1vw;
+	margin: 0px;
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	font-family: 'Roboto';
@@ -550,7 +546,7 @@ a, a:hover{
 	right: 10%;
 	bottom: 10%;
 	text-align: center;
-	background: #212121e0;
+	background: #212121ee;
 	color: white;
 	padding: 10px 30px;
 	border-radius: 5px;
