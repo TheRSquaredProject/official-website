@@ -15,7 +15,7 @@
 	display: flex;
 	align-self: center;
 	cursor: default;
-	max-width: 100%;
+	width: 95%;
 	position: relative;
 	margin: 10px 0px;
 }
