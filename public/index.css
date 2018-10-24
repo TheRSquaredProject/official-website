@@ -435,7 +435,7 @@ a, a:hover{
 	align-self: center;
 	z-index: 0;
 	height: 100%;
-	width: auto;
+	width: 100%;
 	position: fixed;
 	top: 0px;
 	left: 0px;
