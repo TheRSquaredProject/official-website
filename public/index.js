@@ -10,5 +10,5 @@ $(document).ready(()=>{
     });
     $(".image-container").mouseleave(()=> {
         $(".photo-credits").css('opacity', '0');
-    }); 
+    });
 });

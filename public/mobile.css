@@ -1,11 +1,63 @@
+
+
+/************** cover pic ***********/
+.cover-picture{
+	width: auto;
+	left:-150%;
+}
+.title-overlay{
+	width: 100%;
+	height: 150%;
+	background: none;
+	background-color: rgba(0,0,0,0.65);
+}
+.graph-lines{
+	display: none;
+}
+.headline-text{
+	border-left: 0px;
+	width:82%;
+	top:43%;
+	padding-left: 0px;
+	margin: 0px auto;
+	text-align: left;
+}
+.headline-text h1{
+	font-size:13vw;
+	padding: 10px 0px;
+	/* color:  */
+    /* background-color: #ffff8938; */
+}
+/* .headline-text h1 span{
+	display: block;
+} */
+.headline-text h1 span:nth-child(2){
+	color: #ffbc49;
+}
+.headline-text h2{
+	font-size:4vw;
+	margin: 10px 0px 20px 0px;
+	letter-spacing: 1px;
+}
+.headline-text h2 span{
+	display: inline;
+}
+.action-buttons{
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+	margin: 0px;
+}
+.action-buttons a{
+	margin: 0px 10px;
+}
+/************** cover pic end *****************/
+
+
 .about-us-content{
     font-size: .5em;
 }
-
-/*
-.land-cover-img{
-    min-height: auto;
-}*/
 .land{
     height: 50%;
 }
@@ -51,6 +103,7 @@
 }
 
 
+/*********** what we do *************/
 .what-we-do-container{
     padding-top: 10vw;
 }
@@ -226,58 +279,8 @@
 
 
 
-/***********shanzid***********/
-.cover-picture{
-	width: auto;
-	left:-150%;
-}
-.title-overlay{
-	width: 100%;
-	height: 150%;
-	background: none;
-	background-color: rgba(0,0,0,0.65);
-}
-.graph-lines{
-	display: none;
-}
-.headline-text{
-	border-left: 0px;
-	width:82%;
-	top:43%;
-	padding-left: 0px;
-	margin: 0px auto;
-	text-align: left;
-}
-.headline-text h1{
-	font-size:13vw;
-	padding: 10px 0px;
-	/* color:  */
-    /* background-color: #ffff8938; */
-}
-/* .headline-text h1 span{
-	display: block;
-} */
-.headline-text h1 span:nth-child(2){
-	color: #ffbc49;
-}
-.headline-text h2{
-	font-size:4vw;
-	margin: 10px 0px 20px 0px;
-	letter-spacing: 1px;
-}
-.headline-text h2 span{
-	display: inline;
-}
-.action-buttons{
-	top: 40%;
-	width: 100%;
-	text-align: center;
-	margin-left: 0px;
-	margin: 0px;
-}
-.action-buttons a{
-	margin: 0px 10px;
-}
+/*********** contact us card ***********/
+
 .contact-card-container{
 	padding-left: 0px;
 	padding-right: 0px;

@@ -13,15 +13,18 @@
 }
 .person{
 	display: flex;
+	flex-direction: row;
 	align-self: center;
 	cursor: default;
+	min-width: 80%;
 	max-width: 100%;
 	position: relative;
 	margin: 10px 0px;
 }
 .person .display-picture{
+	align-self: center;
 	position: relative;
-	max-width: 30%;
+	width: 60%;
 }
 .person .display-picture img{
 	width: 100%;
