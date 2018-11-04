@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="theme-color" content="#212121" />
+	<meta name="theme-color" content="#212121"/>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,26 +10,40 @@
 	<link rel="shortcut icon" type="image/png" href="../common_files/favicon.png" />
 
 	<!-- meta data for SEO -->
-	<meta name="description" content="">
+    <meta name="description" content="R-Squared Project aims to create awareness about Bangladesh's socio-economic issues through data analysis.">
+
+    <link rel="shortcut icon" type="image/png" href="./common_files/favicon.png"/>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../common_files/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../common_files/css/nav&foot.css">
-	<link rel="stylesheet" href="../common_files/css/footer.css">
 	<link rel="stylesheet" href="../common_files/css/common_styles.css">
-	<link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./common_files/css/button.css">
+    <link rel="stylesheet" href="./common_files/css/common_styles.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="mobile.css" />
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Raleway:700" rel="stylesheet">
 
+	<!-- new CSS-->
+	<link rel="stylesheet" href="./projects.css">
+
+
 	<!-- jquery -->
-	<script src="../common_files/js/jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../common_files/js/jquery-3.1.1.js"></script>
 
-	<!--custom js-->
-	<script src="../common_files/js/custom_js/headerHelpers.js"></script>
-	<script src="../common_files/js/custom_js/common.js"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122703977-1"></script>
-	<script src="../common_files/js/custom_js/googleAnalytics.js"></script>
+    <!--custom js-->
+    <script async src="./common_files/js/custom_js/headerHelpers.js" ></script>
+    <script async src="./common_files/js/custom_js/common.js" type="text/javascript"></script>
+    <script async src="index.js" type="text/javascript"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122703977-1"></script>
+    <script async src="./common_files/js/custom_js/googleAnalytics.js"></script>
+
+
+
 
 	<title>Our Projects</title>
 </head>
@@ -51,93 +65,71 @@
 		</div>
 	</nav>
 
+  <!-- the read more buttons lead to the official blog -->
+	
 	<div class="gap"></div>
-	<div class="project" id="sexual_abuse">
-		<div class="title">
-			<h1 class="headline">Factors behind sexual abuse</h1>
-			<div>July 19, 2018</div>
-		</div>
+	<div class="projects-container">
 
-		<div class="description-container">
-			<img class="infograph secure-img" src="infographs/navid_et_al.jpg">
-			<h2>Why do men rape?</h2>
-			<div>
-				<p>
-					Research done by Naved RT et al found that 1 in 10 men had committed sexual assault of females including non-partners in
-					Bangladesh. Further analysis of this research conducted by the R-স্কয়ার্ড team has been transformed into a brief infographic
-					highlighting some of the factors behind rape.
-					<br>
-					<br> Sections 2 and 3 highlight how important it is to analyze men’s attitudes towards women and women’s rights to understand
-					why rape happens. Motivations for rape include sexual entitlement, anger and sadly, entertainment.
-					<br>
-					<br> With this knowledge, it is important to ask ourselves:
-					<br> Why do we tend to blame rape victims ? How does our attitudes contribute to this problem? How can we provide support
-					to victims of such violence?
-					<br>
-					<br> We still need to have far more difficult conversations regarding sexual violence to understand it more deeply and attack
-					any aspect of our culture that condones such acts!
-				</p>
+        <div class="row content-ct project" id="projects">
+        	<div class="headline-container"><p class="headline">Our Projects</p></div>
+        	 <div class="button-container">
+        	 	<a class="button">Articles</a><a class="button">Research Works</a><a class="button">Data Tools</a></div>
+
+              <div class="gap"></div>
+           		<div class="col-md-4 col-sm-6 feature">
+            		<img src="infographs/infographic_on_rape.png" class="project-img">
+            		<h3> Why do Men Rape</h3>
+            		<p>Research done by Naved RT et al found that 1 in 10 men had committed sexual assault....</p>
+                <div class="button-container"><a href="https://thersquaredproject.wordpress.com/home/l" class="button">Read More</a></div>
+          		</div>
+
+           		<div class="col-md-4 col-sm-6 feature">
+            		<img src="infographs/navid_et_al.jpg" class="project-img">
+            		<h3>The Real Scenario</h3>
+            		<p>As we approach the next decade, an important problem that Bangladesh faces is sexual ...</p>
+                <div class="button-container"><a href="https://thersquaredproject.wordpress.com/home/" class="button">Read More</a></div>
+              </div>
+           		<div class="col-md-4 col-sm-6 feature">
+            		<img src="infographs/tothyobd.png" class="project-img">
+            		<h3>Tothyo-BD</h3>
+            		<p>Over the last decade, data has become the new currency.Data has been at the center ...</p>
+                <div class="button-container"><a href="https://thersquaredproject.wordpress.com/2018/10/15/tothyobd-for-a-data-driven-bangladesh/" class="button">Read More</a></div>
+          		</div>
+
+        </div>
+        <!-- End: projects -->
+      </div>
+
+      <div class="gap"></div>
+      <div class="footer">
+		<div class="associates-box">
+			<div class="associates-logo-quilt">
+                <span class="associates-title">OUR ASSOCIATES</span>
+				<img src="infographs/wistem.png" class="associates-logo">
+				<img src="infographs/bdt-amplogo-v1.png" class="associates-logo">
 			</div>
+        </div>
+        <div class="website-credits">
+            <span>Website designed and developed by:</span><br>
+            <p>Shanzid Shaiham (https://shanzid.com)</p>
+            <p>Al-Mubin Khan Nabil (https://fb.com/almubin.nabil)</p>
+            <p>Mahbuba-Tasmin (https://tasmin153.github.io/)</p>
+        </div>
+		<div class="copyright">
+			Copyright © 2018 The R-স্কয়ার্ড Project
 		</div>
 	</div>
 
 
-	<div class="project" id="reasons_behind_abuse">
-		<div class="title">
-			<h1 class="headline">Incidence of rape</h1>
-			<div>May 9, 2018</div>
-		</div>
-		<div class="description-container">
-			<img class="infograph secure-img" src="./infographs/infographic_on_rape.png">
-			<h2>How prevalent is rape, exactly?</h2>
-			<p>
-				As we approach the next decade, an important problem that Bangladesh faces is sexual violence (i.e: rape/ধর্ষণ). Although
-				the path to a solution is difficult, the first step to solving the problem is to understand it more deeply, and a powerful
-				way to understand is through data-visualization. In this pilot-project of The R-স্কয়ার্ড Project, we scraped data (Python:
-				PyPDF2 ) on rape in Bangladesh over the past 10 years from online sources, and designed the infographic (R: ggplot2)
-				below. Like any statistic, we encourage that the interpretation of these results should be your own; but we found the numbers
-				to be both shocking and sadly, unsurprising:
 
-				<br>
-				<br> 1. According to the sources, the total cases of rapes reported per year (red line) has increased significantly (to about
-				800 cases/year in 2017) over the last decade.
-
-				<br>
-				<br> 2. Shockingly, the percentage of victims who were children/below 18 years of age (blue line) has been on the rise ,
-				reaching close to 70% in 2017!
-
-				<br>
-				<br> 3. These two things are true even though the education sector of Bangladesh has performed well in enrolling more students
-				into schools (the brown barchart in the background). So perhaps the thing to learn here is that simply increasing the
-				quantity of education will not help, the CONTENT of education is also important. What we teach children at school (AND
-				at home) is vitally important in how he/she affects society. Furthermore, for any prospective/new parents, the blue line
-				tells us how important it is for children to be able speak to parents about issues of sexual harassment that they might
-				be facing. Avoiding these issues as "taboos" in our households can only worsen the situation.
+	 <!-- New jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/scrolling-nav.js"></script>
+      <script src="js/validator.js"></script>
 
 
-				<br>
-				<br> 4. If there is any good news, it's that the percentage of rape-victims who die/commit suicide as a result of rape has
-				steadily been decreasing over the last 10 years (red/green piecharts in the bottom). It is perhaps fair to say that the
-				amazing services for women (such as national helplines, NGOs fighting for victims, and online platforms that give women
-				a voice, etc) are playing a role in bringing this number down.
-
-				<br>
-				<br> 5. To keep it simple, we omitted certain important features from this picture, such as report-bias correction (i.e "are
-				rape cases actually increasing or are they simply being reported more in media?"), and statistical checks for data-reliability
-				(i.e "is the data even reliable?"). But anyone who is curious is encouraged to reach out, and we can discuss how
-				we tackled these statistical problems, or even how you would tackle it.
-
-			</p>
-		</div>
-	</div>
-
-	<div class="website-credits">
-		<span>Website designed and developed by:</span>
-		<br>
-		<p>Shanzid Shaiham (https://shanzid.com)</p>
-		<p>Al-Mubin Khan Nabil (https://fb.com/almubin.nabil)</p>
-	</div>
-	<div class="copyright">
-		Copyright © 2018 The R-Squared Project
-	</div>
 </body>
+</html>
