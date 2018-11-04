@@ -1,7 +1,7 @@
 $(document).ready(()=>{
     $('img').each(function () {
         var imgurl = $(this).attr('data-src');
-        if (imgurl) {
+        if (imgurl && $(this).css('display')!='none') {
             $(this).attr('src', imgurl);
         }
     });
