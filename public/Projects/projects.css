@@ -211,14 +211,19 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
 	.projects-container{
 		top: 19vw;
 	}
 	.project .title{
 		font-size: 2.3vw;
-	}
-	
+    }
+    
+    .project .feature {
+        width: 100%;
+        max-width: 100%;
+        margin: 2%;
+    }
 }
 
 .gap{
